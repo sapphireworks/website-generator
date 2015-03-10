@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="index.js"></script>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+<script>
+function initialize()
+{
+  var mapProp = {
+    center: new google.maps.LatLng(51.508742,-0.120850),
+    zoom:7,   
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+        </div>
+
+        <h1 class="navbar-brand">Brand</h1>
+        <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#ab">About</a></li>
+        <li><a href="#ca">Catalogue</a></li>
+        <li><a href="#co">Contact us</a></li>
+      </ul>
+    </div>
+
+  <div class="navbar-collapse collapse">
+
+    <ul class="nav navbar-nav navbar-left">
+        
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+
+    </ul>
+      </div>
+</nav>
+
+<div class="container">
+	<img src="2.jpg" id="centre_img" >
+</div>
+
+<div class="container">
+<div class="about" id = "ab">
+	<h2>About</h2>
+	<p>sldfkjasd;lkfnas;ldkf;asdjfa;jdkfas;ldkfma;slkdfnas;ldjfnask;jdbfasudkfhawoerjfnasd;fjhasd;fuhiasdufhaskjdfbasdfu;hasdfuhasdfuoasdhfasudfhasduofhi
+	</p>
+	<p>sldfkjasd;lkfnas;ldkf;asdjfa;jdkfas;ldkfma;slkdfnas;ldjfnask;jdbfasudkfhawoerjfnasd;fjhasd;fuhiasdufhaskjdfbasdfu;hasdfuhasdfuoasdhfasudfhasduofhi
+	</p>
+	<p>sldfkjasd;lkfnas;ldkf;asdjfa;jdkfas;ldkfma;slkdfnas;ldjfnask;jdbfasudkfhawoerjfnasd;fjhasd;fuhiasdufhaskjdfbasdfu;hasdfuhasdfuoasdhfasudfhasduofhi
+	</p>
+</div>
+	
+	<div class= "catalogue"  id = "ca">
+	<h2>Catalogue</h2>
+		<img src="2.jpg" class="img-thumbnail" alt="Cinque Terre" > 
+		<img src="2.jpg" class="img-thumbnail" alt="Cinque Terre" > 
+		<img src="2.jpg" class="img-thumbnail" alt="Cinque Terre" > 
+	</div>
+
+
+	<div class = "contact"  id = "co">
+	<h2>Contact us</h2>
+     <div id="googleMap" style="width:50%;height:50%;"></div>
+     <div id = "info">
+     	<p>wsefwekf;wlefmwfakjssdfkjhasfkdjhasdf</p>
+     	<p>wsefwekf;wlefmwfakjssdfkjhasfkdjhasdf</p>
+     	<p>wsefwekf;wlefmwfakjssdfkjhasfkdjhasdf</p>
+     	<p>wsefwekf;wlefmwfakjssdfkjhasfkdjhasdf</p>
+     </div>
+	</div>
+
+</div>
+
+<footer>
+  <p>Powered by: Trustious</p>
+</footer>
+
+</body>
+
+</html>
+

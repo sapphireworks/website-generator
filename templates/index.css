@@ -1,0 +1,60 @@
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 300%;
+}
+
+#centre_img
+{
+	min-height: 500px;
+	width: 100%;
+
+}
+
+.about
+{
+	text-align: center;
+
+}
+
+.catalogue
+{
+	text-align: center;
+
+}
+
+.container
+{
+		box-shadow: 0px 0px 5px #888888;
+
+}
+
+.img-thumbnail
+{
+	height: 30%;
+	width: 30%;
+}
+
+.contact
+{
+    text-align: center;
+
+}
+#googleMap
+{
+	float: right;
+}
+
+#info
+{
+	text-align: center;
+}
+
+footer
+{
+	text-align: center;
+}
