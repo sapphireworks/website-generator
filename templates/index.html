@@ -1,55 +1,36 @@
 <html>
 
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <script src="http://maps.googleapis.com/maps/api/js">
-
-
-  </script>
-
-  <script>
-    function initialize() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 7,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-  </script>
 </head>
-
 
 <body>
 
+  <!-- TODO This navbar should be fixed ! -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
 
       <div class="navbar-header">
-      </div>
-
-      <h1 class="navbar-brand">Brand</h1>
-      <div>
         <ul class="nav navbar-nav">
-          <li><a href="#ab">About</a>
+          <li><a href="#about-section">About</a>
           </li>
-          <li><a href="#ca">Catalogue</a>
+          <li><a href="#catalogue-section">Catalogue</a>
           </li>
-          <li><a href="#co">Contact us</a>
+          <li><a href="#contact-us-section">Contact us</a>
           </li>
         </ul>
+
+        <h1 class="navbar-brand">Brand</h1>
       </div>
 
       <div class="navbar-collapse collapse">
@@ -64,35 +45,60 @@
   </nav>
 
   <div class="container">
-    <img src="img/furn-1.jpg" id="centre_img">
-  </div>
 
-  <div class="container">
-    <div class="about" id="ab">
+    <!-- Main cover image -->
+    <div class="row">
+      <img src="img/furn-1.jpg" class="cover-image">
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about-section">
       <h2>About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam, feugiat vel consequat ac, pharetra id ante. Praesent commodo ornare justo, in blandit dui pretium non. Integer vel faucibus ipsum. Pellentesque tempor fringilla libero
         sed interdum. Nam volutpat mauris id diam vehicula consectetur. Morbi congue urna vel nisi rutrum, ut fermentum mauris iaculis. Phasellus leo purus, sollicitudin eu malesuada eget, varius ut mi. Fusce volutpat ipsum eu convallis mattis. Aliquam
         eleifend rhoncus pulvinar. Aliquam posuere pulvinar nibh ac rutrum. Mauris maximus egestas orci, sed mattis ligula ultricies et. Phasellus et fermentum enim.</p>
-
     </div>
 
-    <div class="catalogue" id="ca">
+    <!-- Catalogue section -->
+    <div class="catalogue" id="catalogue-section">
       <h2>Catalogue</h2>
-      <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
-      <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
-      <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+
+      <div class="col col-md-4">
+        <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+        <p class="text-center">400$</p>
+      </div>
+
+      <div class="col col-md-4">
+        <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+        <p class="text-center">500$</p>
+      </div>
+
+      <div class="col col-md-4">
+        <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+        <p class="text-center">699$</p>
+      </div>
+
     </div>
 
-
-    <div class="contact" id="co">
+    <!-- Contact us section -->
+    <div class="row contact" id="contact-us-section">
       <h2>Contact us</h2>
-      <div id="googleMap" style="width:50%;height:50%;"></div>
-      <div id="info">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
+
+      <div class="col col-md-4">
+        <div id="info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam</p>
+        </div>
       </div>
+
+      <div class="col col-md-8">
+        <div id="googleMap" style="width:100%;height:50%;"></div>
+      </div>
+
+
+
     </div>
 
   </div>
@@ -100,6 +106,22 @@
   <footer>
     <p>Powered by: Trustious</p>
   </footer>
+
+
+  <!-- ************ JS ************ -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Beloved jQuery -->
+  <script charset="utf-8" src="js/jquery.min.js"></script>
+
+  <!-- Including maps script -->
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+  <!-- Initializing the map into the document -->
+  <script charset="utf-8" src="js/maps.js"></script>
+
 
 </body>
 
