@@ -21,83 +21,95 @@
 <body>
 
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="/" class="navbar-brand">Brand</a>
-      </div>
-
-
-
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a>
-          </li>
-          <li><a href="#about-section">About</a>
-          </li>
-          <li><a href="#catalogue-section">Catalogue</a>
-          </li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#"><i class="fa fa-envelope-o fa-4"></i></a>
-          </li>
-        </ul>
-
-      </div>
-      <!--/.nav-collapse -->
-
-    </div>
-  </nav>
-
-
   <div class="container">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">Brand</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#about-section">About</a>
+            </li>
+            <li><a href="#catalogue-section">Catalogue</a>
+            </li>
+            <li><a href="#contact-us-section">Contact us</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"><i class="fa fa-envelope-o fa-4"></i></a>
+            </li>
+          </ul>
+
+        </div>
+        <!--/.nav-collapse -->
+
+      </div>
+    </nav>
 
     <!-- Main cover image -->
     <div class="row">
       <img src="img/furn-1.jpg" class="cover-image">
     </div>
 
+    <hr>
+
     <!-- About Section -->
-    <div class="about" id="about-section">
-      <h2>About</h2>
+    <div class="text-center row" id="about-section">
+      <h2 class='section-heading'>About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor diam, feugiat vel consequat ac, pharetra id ante. Praesent commodo ornare justo, in blandit dui pretium non. Integer vel faucibus ipsum. Pellentesque tempor fringilla libero
         sed interdum. Nam volutpat mauris id diam vehicula consectetur. Morbi congue urna vel nisi rutrum, ut fermentum mauris iaculis. Phasellus leo purus, sollicitudin eu malesuada eget, varius ut mi. Fusce volutpat ipsum eu convallis mattis. Aliquam
         eleifend rhoncus pulvinar. Aliquam posuere pulvinar nibh ac rutrum. Mauris maximus egestas orci, sed mattis ligula ultricies et. Phasellus et fermentum enim.</p>
     </div>
 
+    <hr>
+
     <!-- Catalogue section -->
-    <div class="catalogue" id="catalogue-section">
-      <h2>Catalogue</h2>
+    <div class="row" id="catalogue-section">
+
+      <h2 class="section-heading">Catalogue</h2>
 
       <div class="col col-md-4">
-        <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
-        <p class="text-center">400$</p>
+        <div class="box">
+          <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+          <p class="text-center">400$</p>
+        </div>
       </div>
 
       <div class="col col-md-4">
-        <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
-        <p class="text-center">500$</p>
+        <div class="box">
+          <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+          <p class="text-center">500$</p>
+        </div>
       </div>
 
       <div class="col col-md-4">
-        <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
-        <p class="text-center">699$</p>
+        <div class="box">
+          <img src="img/furn-1.jpg" class="img-thumbnail" alt="Cinque Terre">
+          <p class="text-center">699$</p>
+        </div>
       </div>
 
     </div>
 
+    <hr>
+
     <!-- Contact us section -->
-    <div class="row contact" id="contact-us-section">
-      <h2>Contact us</h2>
+    <div class="row" id="contact-us-section">
+      <h2 class='section-heading'>Contact us</h2>
 
       <div class="col col-md-4">
         <div id="info">
@@ -113,10 +125,11 @@
       </div>
 
     </div>
+
   </div>
 
   <footer>
-    <p>Powered by: Trustious</p>
+    <p class='text-center'>Powered by: Trustious</p>
   </footer>
 
 
