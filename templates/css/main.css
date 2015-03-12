@@ -1,11 +1,11 @@
-/*.navbar-brand {
+.navbar-brand {
   position: absolute;
   width: 100%;
   left: 0;
   text-align: center;
   margin: auto;
   font-size: 300%;
-}*/
+}
 
 .cover-image {
   min-height: 500px;
@@ -25,7 +25,7 @@
 }
 
 .contact {
-	padding-bottom:10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -42,5 +42,5 @@ footer {
 }
 
 .fa-4 {
-  font-size:25px;
+  font-size: 25px;
 }
