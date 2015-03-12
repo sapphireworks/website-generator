@@ -10,39 +10,52 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
 
 </head>
 
 <body>
 
-  <!-- TODO This navbar should be fixed ! -->
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
 
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
+          <li><a href="#">Home</a>
+          </li>
           <li><a href="#about-section">About</a>
           </li>
           <li><a href="#catalogue-section">Catalogue</a>
           </li>
-          <li><a href="#contact-us-section">Contact us</a>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><i class="fa fa-envelope-o fa-4"></i></a>
           </li>
         </ul>
 
-        <h1 class="navbar-brand">Brand</h1>
       </div>
+      <!--/.nav-collapse -->
 
-      <div class="navbar-collapse collapse">
-
-        <ul class="nav navbar-nav navbar-left">
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-
-        </ul>
-      </div>
+    </div>
   </nav>
+
 
   <div class="container">
 
@@ -109,12 +122,12 @@
 
 
   <!-- ************ JS ************ -->
+  <!-- Beloved jQuery -->
+  <script charset="utf-8" src="js/jquery.min.js"></script>
+
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="js/bootstrap.min.js"></script>
-
-  <!-- Beloved jQuery -->
-  <script charset="utf-8" src="js/jquery.min.js"></script>
 
   <!-- Including maps script -->
   <script src="http://maps.googleapis.com/maps/api/js"></script>
