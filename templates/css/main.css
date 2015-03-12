@@ -1,11 +1,13 @@
-.navbar-brand {
+/*.brand {
   position: absolute;
   width: 100%;
   left: 0;
+  top: 0;
   text-align: center;
   margin: auto;
-  font-size: 300%;
-}
+  font-size: 30px;
+}*/
+
 
 .cover-image {
   min-height: 500px;
