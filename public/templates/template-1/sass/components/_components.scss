@@ -12,8 +12,12 @@
   padding-bottom: 20px;
 }
 .box {
-  padding: 15px;
-  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 3px;
+  position: relative;
+  background: $primary-color;
+  padding-top: 20px;
 }
 .shaded {
   box-shadow: 0 0 5px #888;

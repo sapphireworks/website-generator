@@ -3,7 +3,7 @@
   margin-bottom: 0;
   border-bottom: 1px solid transparentize($navbar-color, 0.7);
   text-transform: uppercase;
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: $headline-font-family;
   background-color: $navbar-color;
   .navbar-brand {
     font-weight: 700;
