@@ -31,24 +31,24 @@
             <span class="sr-only">Toggle navigation</span>
             <span><i class="fa fa-bars"></i></span>
           </button>
-          <a href="index.html" class="navbar-brand">Brand</a>
+          <a href="#home" class="navbar-brand page-scroll">Brand</a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a>
+            <li><a class='page-scroll' href="#home">Home</a>
             </li>
-            <li><a href="#about-section">About</a>
+            <li><a class='page-scroll' href="#about-section">About</a>
             </li>
-            <li><a href="#catalogue-section">Catalogue</a>
+            <li><a class='page-scroll' href="#catalogue-section">Catalogue</a>
             </li>
-            <li><a href="#contact-us-section">Contact us</a>
+            <li><a class='page-scroll' href="#contact-us-section">Contact us</a>
             </li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#"><i class="fa fa-envelope-o fa-4"></i></a>
+              <a href="#contact-us-section"><i class="fa fa-envelope-o fa-4"></i></a>
             </li>
           </ul>
 
@@ -59,7 +59,7 @@
     </nav>
 
     <!-- Main cover image -->
-    <div class="row section">
+    <div class="row section" id="home">
       <img src="img/furn-1.jpg" class="cover-image">
     </div>
 
@@ -137,9 +137,11 @@
   <!-- Beloved jQuery -->
   <script charset="utf-8" src="js/jquery.min.js"></script>
 
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- JQuery easing plugin -->
+  <script src="js/jquery.easing.min.js"></script>
 
   <!-- Including maps script -->
   <script src="http://maps.googleapis.com/maps/api/js"></script>
