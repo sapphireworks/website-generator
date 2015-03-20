@@ -74,14 +74,15 @@
 
 			</fieldset>
 		</form>-->
+		<% @template = @templates.first %>
 
 		<div class="row">
 			<div class="col-md-6">
 				<div class="thumbnail">
-					<%= image_tag("20.jpg", class: "img-responsive") %>
+					<%= image_tag(@template.thumbnail_path , class: "img-responsive") %>
 					<div class="caption">
 						<div class="caption-comp">
-							<a href="#" class="btn btn-default">View</a>
+							<%= link_to "View", {:action => 'show' ,:id => @template.id} , class: "btn btn-default" %>
 							<a href="#" class="btn btn-default">Choose</a>
 						</div>
 					</div>
