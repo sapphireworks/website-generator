@@ -58,6 +58,13 @@ body {
 .shaded {
   box-shadow: 0 0 5px #888; }
 
+/*Dividers*/
+.section-heading-divider {
+  height: 1px;
+  width: 70px;
+  margin: 10px auto;
+  background: #000; }
+
 /* Navigation bar styles */
 .navbar-custom {
   margin-bottom: 0;
