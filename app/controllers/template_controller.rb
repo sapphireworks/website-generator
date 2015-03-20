@@ -5,5 +5,6 @@ class TemplateController < ApplicationController
 
 	def show
 		@template = Template.find(params[:id])
+		render :file => @template.template_path   #path should be like >> 'public/templates/template-1/index.html'
 	end
 end
