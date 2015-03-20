@@ -1,0 +1,139 @@
+	<!--<% content_for :header do %>
+		<%= javascript_include_tag "jquery.min.js" %>
+		<%= javascript_include_tag "bootstrap.min.js" %>
+		<%= javascript_include_tag "script.js" %>
+		<%= javascript_include_tag "application.js" %>
+		<%= javascript_include_tag "template.coffee" %>
+		<%= stylesheet_link_tag "bootstrap.min.css" %>
+		<%= stylesheet_link_tag "style.css" %>
+		<%= stylesheet_link_tag "application.css" %>
+		<%= stylesheet_link_tag "tenmplate.scss" %>
+	<% end %>-->
+
+	<!--<div class="leftbar"></div>-->
+	<div class="header-main">
+		<div class="header-overlay">
+			<h1>Trustious website generator</h1>
+			<p>The easy tool to create your company website/catalogue</p>
+		</div>
+	</div>
+	<div class = "container main-cont">
+		<h3>Step 1: choose a template to start customizing</h3>
+		<!--<form>
+			<fieldset>
+				<legend>Choose Your Template</legend> 
+
+				<table>
+					<tr>
+						<td>				
+							<div class="img">
+								<a href="#">
+									<img src="" alt="" width="290" height="190">
+								</a>
+							</div>
+						</td>
+						<td>
+							<div class="img">
+								<a href="#">
+									<img src="" alt="" width="290" height="190">
+								</a>
+							</div>
+						</td>
+						<td>	
+							<div class="img">
+								<a href="#">
+									<img src="" alt="" width="290" height="190">
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>				
+							<div class="img">
+								<a href="#">
+									<img src="" alt="" width="290" height="190">
+								</a>
+							</div>
+						</td>
+						<td>
+							<div class="img">
+								<a href="#">
+									<img src="" alt="" width="290" height="190">
+								</a>
+							</div>
+						</td>
+						<td>	
+							<div class="img">
+								<a href="#">
+									<img src="" alt="" width="290" height="190">
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+			</fieldset>
+		</form>-->
+		<% @template = @templates.first %>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<%= image_tag(@template.thumbnail_path , class: "img-responsive") %>
+					<div class="caption">
+						<div class="caption-comp">
+							<%= link_to "View", {:action => 'show' ,:id => @template.id} , class: "btn btn-default" %>
+							<a href="#" class="btn btn-default">Choose</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<%= image_tag("21.jpg", class: "img-responsive") %>
+					<div class="caption">
+						<div class="caption-comp">
+							<a href="#" class="btn btn-default">View</a>
+							<a href="#" class="btn btn-default">Choose</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<%= image_tag("22.jpg", class: "img-responsive") %>
+					<div class="caption">
+						<div class="caption-comp">
+							<a href="#" class="btn btn-default">View</a>
+							<a href="#" class="btn btn-default">Choose</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<%= image_tag("23.jpg", class: "img-responsive") %>
+					<div class="caption">
+						<div class="caption-comp">
+							<a href="#" class="btn btn-default">View</a>
+							<a href="#" class="btn btn-default">Choose</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+				
+
+	</div>
+	<!--<div class="rightbar"></div> -->
+	<div class="container footer-cont">
+		<p>Powered by <a href="#">Trustious</a></p>
+	</div>

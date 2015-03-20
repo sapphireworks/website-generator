@@ -47,3 +47,9 @@ pickle-email-*.html
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
+
+
+#---------------------This is for Sass---------------------
+
+.sass-cache
+*.css.map

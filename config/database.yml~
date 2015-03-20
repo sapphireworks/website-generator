@@ -10,7 +10,7 @@ default: &default
   reconnect: false
   pool: 5
   username: root
-  password: 6g6g000
+  password: admin
 development:
   <<: *default
   database: development.mysql
