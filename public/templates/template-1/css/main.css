@@ -31,11 +31,12 @@
  */
 /*All the components that doesn't belong to a specific group*/
 .cover-image {
+  padding-top: 80px;
   min-height: 500px;
   width: 100%; }
 
 .section {
-  padding: 30px 0; }
+  padding: 50px 0; }
 
 .section-heading {
   text-align: center;
@@ -85,7 +86,7 @@
 
 @media (min-width: 767px) {
   .navbar {
-    padding: 20px 0;
+    padding: 5px 0;
     border-bottom: none;
     letter-spacing: 1px;
     background: rgba(255, 255, 255, 0.9);
