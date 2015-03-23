@@ -1,25 +1,8 @@
-<html>
 
-<head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="/templates/template-1/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="/templates/template-1/css/bootstrap-theme.min.css">
-
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="/templates/template-1/css/font-awesome.min.css">
-
-  <link rel="stylesheet" type="text/css" href="/templates/template-1/css/main.css">
-
-
-</head>
-
-<body>
-
+  <% content_for :head do %>
+    <%= stylesheet_link_tag 'template-1/css/main' %>
+    <%= javascript_include_tag 'template-1/app' %>
+  <% end %>
 
   <div class="container">
 
