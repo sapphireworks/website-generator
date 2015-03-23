@@ -38,6 +38,9 @@ gem 'mysql'
 # Font awesome ... because it's awesome !
 gem "font-awesome-rails"
 
+# JQuery turbolinks
+gem 'jquery-turbolinks'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

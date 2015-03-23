@@ -1,7 +1,7 @@
 
   <% content_for :head do %>
-    <%= stylesheet_link_tag 'template-1/css/main' %>
-    <%= javascript_include_tag 'template-1/app' %>
+    <%= stylesheet_link_tag 'template-1/css/main' , media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'template-1/app', 'data-turbolinks-track' => true  %>
   <% end %>
 
   <div class="container">
