@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+template = Template.new
+template.template_path = 'template/template-1/index'
+template.thumbnail_path = 'template-1/thumb.png'
+template.save
