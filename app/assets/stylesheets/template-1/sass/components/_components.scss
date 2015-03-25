@@ -1,0 +1,28 @@
+/*All the components that doesn't belong to a specific group*/
+.cover-image {
+  padding-top: 80px;
+  min-height: 500px;
+  width: 100%;
+}
+.section {
+  padding: 50px 0;
+}
+.section-heading {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.section-content {
+  margin-top: 35px;
+}
+.box {
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 3px;
+  position: relative;
+  background: $primary-color;
+  padding-top: 20px;
+}
+.shaded {
+  box-shadow: 0 0 5px #888;
+}
