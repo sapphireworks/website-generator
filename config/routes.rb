@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'template/show'
   get 'template/customize'
   get 'template/template-1/index'
+
+  root 'template#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
