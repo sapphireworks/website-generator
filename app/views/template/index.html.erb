@@ -1,14 +1,17 @@
-
 <div class="header-main">
   <div class="header-overlay">
     <h1>Trustious website generator</h1>
     <p>The easy tool to create your company website/catalogue</p>
   </div>
+  <!-- end of header-overlay -->
 </div>
+<!-- end of header-main -->
 <div class = "container main-cont">
   <h3>Step 1: choose a template to start customizing</h3>
   <% @template = @templates.first %>
+  <!-- row with 2 templates -->
   <div class="row">
+    <!-- template thumbnail -->
     <div class="col-md-6">
       <div class="thumbnail">
         <%= image_tag(@template.thumbnail_path , class: "img-responsive") %>
@@ -20,6 +23,7 @@
         </div>
       </div>
     </div>
+    <!-- template thumbnail -->
     <div class="col-md-6">
       <div class="thumbnail">
         <%= image_tag("21.jpg", class: "img-responsive" ) %>
@@ -32,7 +36,10 @@
       </div>
     </div>
   </div>
+  <!-- end of row -->
+  <!-- row with 2 templates -->
   <div class="row">
+    <!-- template thumbnail -->
     <div class="col-md-6">
       <div class="thumbnail">
         <%= image_tag("22.jpg", class: "img-responsive") %>
@@ -44,6 +51,7 @@
         </div>
       </div>
     </div>
+    <!-- template thumbnail -->
     <div class="col-md-6">
       <div class="thumbnail">
         <%= image_tag("23.jpg", class: "img-responsive") %>
@@ -56,7 +64,10 @@
       </div>
     </div>
   </div>
+  <!-- end of row -->
 </div>
+<!-- end of container main-cont -->
 <div class="container footer-cont">
   <p>Powered by <a href="#">Trustious</a></p>
 </div>
+<!-- end of container footer-cont -->
