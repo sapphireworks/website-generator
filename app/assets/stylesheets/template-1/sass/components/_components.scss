@@ -26,6 +26,12 @@
 .shaded {
   box-shadow: 0 0 5px #888;
 }
+
+.list-horizontal-scroll{
+  white-space:nowrap;
+  overflow-x:scroll;
+}
+
 /*Item hovering effect*/
 .grid {
   padding: 20px 20px 100px;
