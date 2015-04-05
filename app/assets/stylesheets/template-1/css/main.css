@@ -96,7 +96,7 @@ body {
     top: 0;
     left: 0;
     padding: 20px;
-    background: #2c3f52;
+    background: rgba(44, 63, 82, 0.9);
     color: #ed4e6e; }
     .grid figcaption h3 {
       margin: 0;
