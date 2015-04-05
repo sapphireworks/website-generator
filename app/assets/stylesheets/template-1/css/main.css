@@ -3,6 +3,11 @@
  */
 /* Normalize */
 @import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+html,
+body {
+  margin: 0px;
+  padding: 0px; }
+
 .section {
   padding: 30px 0; }
 
@@ -60,6 +65,88 @@ body {
 
 .shaded {
   box-shadow: 0 0 5px #888; }
+
+/*Item hovering effect*/
+.grid {
+  padding: 20px 20px 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center; }
+  .grid li {
+    display: inline-block;
+    width: 440px;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    position: relative; }
+  .grid figure {
+    margin: 0;
+    position: relative; }
+    .grid figure img {
+      max-width: 100%;
+      display: block;
+      position: relative; }
+  .grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #2c3f52;
+    color: #ed4e6e; }
+    .grid figcaption h3 {
+      margin: 0;
+      padding: 0;
+      color: #fff; }
+    .grid figcaption a {
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      background: #ed4e6e;
+      color: #fff; }
+
+.cs-style-3 figure {
+  overflow: hidden; }
+  .cs-style-3 figure img {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s; }
+  .cs-style-3 figure figcaption {
+    height: 100px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s; }
+    .cs-style-3 figure figcaption a {
+      position: absolute;
+      bottom: 20px;
+      right: 20px; }
+
+.cs-style-3 figure .no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px); }
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s; }
 
 #google-map {
   height: 300px;
