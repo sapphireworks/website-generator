@@ -26,6 +26,12 @@ $('.navbar-collapse ul li a').click(function() {
   $('.navbar-toggle:visible').click();
 });
 
+/*
+ * Initializing owl carousel on catalouge items
+ */
+ $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+ });
 
 /**
  * Initializing and appending google map
