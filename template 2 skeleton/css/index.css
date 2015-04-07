@@ -138,7 +138,13 @@ font-size: 15px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+#catalogue{
+    text-align: center;
+}
 
+#contact_us{
+    margin-left: 10%;
+}
 h3{
 	font-weight: bold;
 }
