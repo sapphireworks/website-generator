@@ -15,4 +15,6 @@
  *= require 'bootstrap'
  *= require 'font-awesome'
  *= require 'style'
+ *= require owl.carousel
+ *= require owl.theme
  */
