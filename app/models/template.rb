@@ -1,5 +1,5 @@
 class Template < ActiveRecord::Base
-	has_one :color_pallete
+	has_many :color_pallete
 	has_one :home_section
 	has_one :about_section
 	has_one :contact_us_section
