@@ -3,58 +3,73 @@
 
     
 <head>
+    <%= stylesheet_link_tag 'customization-page' , media: 'all', 'data-turbolinks-track' => true %>
 	<title>Customize</title>
 	<script src="script.js"></script>
 </head>
 <!-- uncomment for same header as main page -->
 
-<div class="header-customization">
-		<div class="header-overlay">
-			<h1>Customize your template</h1>
-			<p>Be Creative</p>
-		</div>
-</div>
+<body>
+	<div class="header-customization">
+			<div class="header-overlay">
+				<h1>Customize your template</h1>
+				<p>Be Creative</p>
+			</div>
+	</div>
+	<!-- end of header-customization -->
 
 <div class = "customization-cont">
-<h3>section 1</h3>
-<form action="">
-<p>Fonts</p>
-<input type="radio" name="s1Font" value="Font1">Font 1
-<input type="radio" name="s1Font" value="Font2">Font 2 
-</form>
+	<div class="container">
+			<div class="col-md-1"></div>
+					 <div class="col-md-5">
+					            <br><br><br><br><br><br>
+								<div class="list-group" id = "section-list">
+								  <a href="#" class="list-group-item">Section 1</a>
+								  <a href="#" class="list-group-item">Section 2</a>
+								  <a href="#" class="list-group-item active">Section 3</a>
+								  <a href="#" class="list-group-item">Section 4</a>
+								</div>
+								<!-- end of list-group -->
+						</div>
+						<!-- end of col-md-4 -->
+			         <div class="col-md-6">
+			               <p> Font<p>
+	                           <div class="list-group list-group-horizontal">
+					              <a href="#" class="list-group-item">Font 1</a>
+					              <a href="#" class="list-group-item">Font 2</a>
+					              <a href="#" class="list-group-item active">Font 3</a>
+					              <a href="#" class="list-group-item">Font 4</a>
+					            </div>
+					            <!-- end of list-group -->
+					       <p> Color Palette<p>
+	                           <div class="list-group list-group-horizontal">
+					              <a href="#" class="list-group-item">Palette 1</a>
+					              <a href="#" class="list-group-item active">Palette 2</a>
+					              <a href="#" class="list-group-item">Palette 3</a>
+					            </div>
+					            <!-- end of list-group -->
+					</div>
+					<!-- end of col-md-5 -->
+			</div>
+		<!-- end of container -->
+   </div>
+   <!-- end of customization-cont -->
 
-<form action="">
-<p>Colors</p>
-<input type="radio" name="s1Color" value="color1">Color 1
-<input type="radio" name="s1Color" value="color2">Color 2
-</form>
-
-<h3>section 2</h3>
-<form action="">
-<p>Fonts</p>
-<input type="radio" name="s2Font" value="Font1">Font 1
-<input type="radio" name="s2Font" value="Font2">Font 2 
-</form>
-
-<form action="">
-<p>Colors</p>
-<input type="radio" name="s2Color" value="color1">Color 1
-<input type="radio" name="s2Color" value="color2">Color 2 
-</form>
-</div>
-
-
-<div class="caption-custom-comp">
-	<a href="#" class="btn btn-default">preview</a>
-	<a href="#" class="btn btn-default">publish</a>
-</div>
-
-<iframe src="http://localhost:3000/template/show?id=1" width="100%" height="600"></iframe>
-
-<div class="container footer-cont">
-		<p>Powered by <a href="#">Trustious</a></p>
+	<div class="caption-custom-comp">
+		<a href="#" class="btn btn-default">preview</a>
+		<a href="#" class="btn btn-default">publish</a>
 	</div>
+	<!-- end of caption-custom-comp -->
 
+    <iframe src="http://localhost:3000/template/show?id=1" width="100%" height="600"></iframe>
+
+	<div class="container footer-cont">
+			<p>Powered by <a href="#">Trustious</a></p>
+    </div>
+    <!-- end of container footer-cont -->
+
+</body>
+</html>
 
 
 	
