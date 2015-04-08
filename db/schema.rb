@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408013546) do
+ActiveRecord::Schema.define(version: 20150408024710) do
+
+  create_table "about_sections", force: :cascade do |t|
+    t.string   "name",         limit: 255
+    t.string   "html",         limit: 255
+    t.integer  "templates_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "color_pallets", force: :cascade do |t|
     t.string   "name",         limit: 255
