@@ -1,3 +1,3 @@
 class ColorPallet < ActiveRecord::Base
-	belogns_to :template
+	belongs_to :template
 end
