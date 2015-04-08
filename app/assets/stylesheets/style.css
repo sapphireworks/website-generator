@@ -34,7 +34,7 @@ form.specialform {
 }
 
 .header-main {
-  background: url(<%= asset_path '51a60938a9f7464309.jpg' %>) no-repeat;
+  background: url("image-header-background.jpg") no-repeat;
 }
 
 .header-main h1 {
