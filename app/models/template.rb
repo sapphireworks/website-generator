@@ -6,4 +6,5 @@ class Template < ActiveRecord::Base
 	has_one :nav_bar
 	has_one :footer
 	has_one :client
+	has_one :cataogue_section
 end
