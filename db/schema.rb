@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408090518) do
+ActiveRecord::Schema.define(version: 20150408142537) do
 
   create_table "about_sections", force: :cascade do |t|
     t.string   "name",         limit: 255
+    t.string   "html",         limit: 255
+    t.integer  "templates_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "catalogue_sections", force: :cascade do |t|
     t.string   "html",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
@@ -65,6 +72,10 @@ ActiveRecord::Schema.define(version: 20150408090518) do
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string "path", limit: 255
   end
 
   create_table "templates", force: :cascade do |t|
