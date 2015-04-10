@@ -79,13 +79,13 @@ body {
     margin: 0;
     padding: 20px;
     text-align: left;
-    position: relative;  }
+    position: relative; }
   .grid figure {
     margin: 0;
     margin-right: auto;
     margin-left: auto;
-    width:740px;
-    height: auto; 
+    width: 740px;
+    height: auto;
     position: relative; }
     .grid figure img {
       max-width: 100%;
