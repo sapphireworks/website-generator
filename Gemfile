@@ -29,6 +29,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #use mysql
 gem 'mysql'
 
+#owl carousel gem
+gem 'owlcarousel-rails', '~> 1.1.3.3'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
