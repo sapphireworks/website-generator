@@ -32,10 +32,10 @@
   padding: 20px 20px 100px;
   max-width: 1300px;
   margin: 0 auto;
-  list-style: none;
   text-align: center;
+  list-style: none;
   li {
-    display: inline-block;
+    display: inline;
     width: 440px;
     margin: 0;
     padding: 20px;
@@ -44,10 +44,14 @@
   }
   figure {
     margin: 0;
-    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width:740px;
+    height: auto; 
+    position: relative; 
     img {
       max-width: 100%;
-      display: block;
+      display: inline;
       position: relative;
     }
   }
