@@ -71,10 +71,10 @@ body {
   padding: 20px 20px 100px;
   max-width: 1300px;
   margin: 0 auto;
-  list-style: none;
-  text-align: center; }
+  text-align: center;
+  list-style: none; }
   .grid li {
-    display: inline-block;
+    display: inline;
     width: 440px;
     margin: 0;
     padding: 20px;
@@ -82,10 +82,14 @@ body {
     position: relative; }
   .grid figure {
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 740px;
+    height: auto;
     position: relative; }
     .grid figure img {
       max-width: 100%;
-      display: block;
+      display: inline;
       position: relative; }
   .grid figcaption {
     position: absolute;
