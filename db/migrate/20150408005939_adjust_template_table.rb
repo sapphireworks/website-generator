@@ -1,8 +1,6 @@
 class AdjustTemplateTable < ActiveRecord::Migration
   def up
-  	change_table :templates do |t|
-  		t.string :name
-  	end
+  	add_column :templates, :name , :string
   end
   def down
   	change_table :templates do |t|
