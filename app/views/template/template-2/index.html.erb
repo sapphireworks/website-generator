@@ -4,8 +4,10 @@
   <%= javascript_include_tag 'template-2/app', 'data-turbolinks-track' => true  %>
 <% end %>
 
+  <!-- TODO this template should separate home and nav , all is in home till now -->
+
   <!-- Centre image and title -->
-  <div>
+  <section id="home-section">
     <div class="wrap">
       <img id="centre_img" src="some-furn.jpg" width="1035" height="200">
       <h1 id="title">Company name</h1>
@@ -21,8 +23,8 @@
       <!-- end of nav -->
     </div>
     <!-- end of wrap -->
-  </div>
-  <!-- end of div -->
+  </section>
+  <!-- end of #home-section -->
 
   <!-- about us section -->
   <section id="about_us">
