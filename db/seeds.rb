@@ -9,6 +9,7 @@
 template = Template.new
 template.name = 'template-1'
 template.thumbnail_path = 'template-1/thumb.png'
+template.template_path = 'template-1/index.html'
 template.save
 
 theme = Theme.new
@@ -18,40 +19,40 @@ theme.save
 
 navbar = NavBar.new
 navbar.name='nav-bold-ease-scroll'
-navbar.html = 'navs/_1.html.erb'
+navbar.html = 'navs/nav_1.html.erb'
 navbar.templates_id = 1
 navbar.themes_id = 1
 navbar.save
 
 home_section = HomeSection.new
 home_section.name = 'normal-big-image'
-home_section.html = 'home-sections/_1.html.erb'
+home_section.html = 'home-sections/home_section_1.html.erb'
 home_section.templates_id = 1
 home_section.themes_id = 1
 home_section.save
 
 about_section = AboutSection.new
 about_section.name = 'normal-about-section'
-about_section.html = 'about-sections/_1.html.erb'
+about_section.html = 'about-sections/about_section_1.html.erb'
 about_section.templates_id = 1
 about_section.themes_id = 1
 about_section.save
 
 catalogue_section = CatalogueSection.new
-catalogue_section.html = 'catalogue-sections/_1.html.erb'
+catalogue_section.html = 'catalogue-sections/catalogue_section_1.html.erb'
 catalogue_section.templates_id = 1
 catalogue_section.themes_id = 1
 catalogue_section.save
 
 contact_us_section = ContactUsSection.new
 contact_us_section.name = 'normal-contact-with-map'
-contact_us_section.html = 'contact-us-sections/_1.html.erb'
+contact_us_section.html = 'contact-us-sections/contact_us_section_1.html.erb'
 contact_us_section.templates_id = 1
 contact_us_section.themes_id = 1
 contact_us_section.save
 
 footer = Footer.new
 footer.name = 'normal-footer'
-footer.html = "footers/_1.html.erb"
+footer.html = "footers/footer_1.html.erb"
 footer.templates_id = 1
 footer.themes_id = 1
