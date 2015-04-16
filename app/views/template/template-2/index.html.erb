@@ -1,0 +1,187 @@
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <link rel="stylesheet" href="css/footer-distributed.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <script src="http://maps.googleapis.com/maps/api/js">
+
+
+  </script>
+
+  <script>
+    function initialize() {
+    	var mapProp = {
+    		center: new google.maps.LatLng(51.508742, -0.120850),
+    		zoom: 7,
+    		mapTypeId: google.maps.MapTypeId.ROADMAP
+    	};
+    	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+  </script>
+</head>
+
+  <!-- Centre image and title -->
+  <div>
+    <div class="wrap">
+      <img id="centre_img" src="2.jpg" width="1035" height="200">
+      <h1 id="title">Company name</h1>
+      <hr id="seperation_line" width="10%" color="black">
+      <h3 id="motto">motto goes here</h3>
+      <div id="nav">
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="#about_us">About us</a></li>
+          <li role="presentation"><a href="#catalogue">Catalogue</a></li>
+          <li role="presentation"><a href="#contact_us">Contact us</a></li>
+        </ul>
+      </div>
+      <!-- end of nav -->
+    </div>
+    <!-- end of wrap -->
+  </div>
+  <!-- end of div -->
+
+  <!-- about us section -->
+  <div id="about_us">
+    <div class="row">
+      <div class="col-md-6" id="about_us_title_div">
+
+        <h1 id="about_us_title">About us </h1>
+      </div>
+      <!-- end of col-md-6 -->
+      <div class="col-md-6" id="about_us_text_div">
+        <p id="about_us_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie
+          elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales
+          nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+      </div>
+      <!-- end of col-md-6 -->
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of about us -->
+
+  <!-- catalogue section -->
+  <div id="catalogue">
+    <h1 id="catalogue_title">Catalogue</h1>
+    <div id="catalogue_div">
+      <div id="catalogue_sub_div">
+        <div class="row">
+          <div class="col-md-3" id></div>
+          <div class="col-md-3" id>
+            <img src="2.jpg" class="img-thumbnail" alt="Cinque Terre">
+          </div>
+          <!-- end of col-md-3 -->
+          <div class="col-md-3">
+            <img src="2.jpg" class="img-thumbnail" alt="Cinque Terre">
+          </div>
+          <!-- end of col-md-3 -->
+          <div class="col-md-3" id></div>
+        </div>
+        <!-- end of row -->
+        <br>
+        <div class="row">
+          <div class="col-md-3" id></div>
+          <div class="col-md-3" id>
+            <img src="2.jpg" class="img-thumbnail" alt="Cinque Terre">
+          </div>
+          <!-- end of col-md-3 -->
+          <div class="col-md-3">
+            <img src="2.jpg" class="img-thumbnail" alt="Cinque Terre">
+          </div>
+          <!-- end of col-md-3 -->
+          <div class="col-md-3" id></div>
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of catalogue_sub_div -->
+    </div>
+    <!-- end of catalogue_div -->
+  </div>
+  <!-- end of catalogue -->
+
+  <!-- contact us section -->
+  <div id="contact_us">
+    <div class="row">
+      <div class="col-md-6" id="contact_us_div">
+        <br>
+        <div class="row">
+          <div class="col-md-6" id>
+            <h3> Phone</h3>
+          </div>
+          <!-- end of col-md-6 -->
+          <div class="col-md-6">
+            <h4>012345676</h4>
+          </div>
+          <!-- end of col-md-6 -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-md-6" id>
+            <h3> Address</h3>
+          </div>
+          <!-- end of col-md-6 -->
+          <div class="col-md-6">
+            <h4>Building #, Street name, City</h4>
+          </div>
+          <!-- end of col-md-6 -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-md-6" id>
+            <h3> e-mail</h3>
+          </div>
+          <!-- end of col-md-6 -->
+          <div class="col-md-6">
+            <h4>contact@company.com</h4>
+          </div>
+          <!-- end of col-md-6 -->
+        </div>
+        <!-- end of row -->
+        <br>
+        <br>
+        <!-- Google maps -->
+        <div id="googleMap" style="width:100%;height:50%;"></div>
+      </div>
+      <!-- end of col-md-6 -->
+
+      <div class="col-md-6" id="contact_us_title_div">
+        <h1 id="contact_us_title">Contact us </h1>
+      </div>
+      <!-- end of col-md-6 -->
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of contact us -->
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+    <!-- end of footer-right -->
+
+    <div class="footer-left">
+      <p>Company Name &copy; 2015</p>
+      <br>
+      <p>Powered by Trustious</p>
+    </div>
+    <!-- end of footer-left -->
+
+  </footer>
+  <!-- end of footer -->
