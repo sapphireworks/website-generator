@@ -14,133 +14,24 @@
 
   <!-- about us section -->
   <section id="about_us">
-    <div class="row">
-      <div class="col-md-6" id="about_us_title_div">
-
-        <h1 id="about_us_title">About us </h1>
-      </div>
-      <!-- end of col-md-6 -->
-      <div class="col-md-6" id="about_us_text_div">
-        <p id="about_us_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie
-          elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales
-          nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-      </div>
-      <!-- end of col-md-6 -->
-    </div>
-    <!-- end of row -->
+    <%= render @about_us.html.to_s %>
   </section>
   <!-- end of about us -->
 
   <!-- catalogue section -->
   <section id="catalogue">
-    <h1 id="catalogue_title">Catalogue</h1>
-    <div id="catalogue_div">
-      <div id="catalogue_sub_div">
-        <div class="row">
-          <div class="col-md-3" id></div>
-          <div class="col-md-3" id>
-            <img src="some-furn.jpg" class="img-thumbnail" alt="Cinque Terre">
-          </div>
-          <!-- end of col-md-3 -->
-          <div class="col-md-3">
-            <img src="some-furn.jpg" class="img-thumbnail" alt="Cinque Terre">
-          </div>
-          <!-- end of col-md-3 -->
-          <div class="col-md-3" id></div>
-        </div>
-        <!-- end of row -->
-        <br>
-        <div class="row">
-          <div class="col-md-3" id></div>
-          <div class="col-md-3" id>
-            <img src="some-furn.jpg" class="img-thumbnail" alt="Cinque Terre">
-          </div>
-          <!-- end of col-md-3 -->
-          <div class="col-md-3">
-            <img src="some-furn.jpg" class="img-thumbnail" alt="Cinque Terre">
-          </div>
-          <!-- end of col-md-3 -->
-          <div class="col-md-3" id></div>
-        </div>
-        <!-- end of row -->
-      </div>
-      <!-- end of catalogue_sub_div -->
-    </div>
-    <!-- end of catalogue_div -->
+    <%= render @about_us.html.to_s %>
   </section>
   <!-- end of catalogue -->
 
   <!-- contact us section -->
   <section id="contact_us">
-    <div class="row">
-      <div class="col-md-6" id="contact_us_div">
-        <br>
-        <div class="row">
-          <div class="col-md-6" id>
-            <h3> Phone</h3>
-          </div>
-          <!-- end of col-md-6 -->
-          <div class="col-md-6">
-            <h4>012345676</h4>
-          </div>
-          <!-- end of col-md-6 -->
-        </div>
-        <!-- end of row -->
-        <div class="row">
-          <div class="col-md-6" id>
-            <h3> Address</h3>
-          </div>
-          <!-- end of col-md-6 -->
-          <div class="col-md-6">
-            <h4>Building #, Street name, City</h4>
-          </div>
-          <!-- end of col-md-6 -->
-        </div>
-        <!-- end of row -->
-        <div class="row">
-          <div class="col-md-6" id>
-            <h3> e-mail</h3>
-          </div>
-          <!-- end of col-md-6 -->
-          <div class="col-md-6">
-            <h4>contact@company.com</h4>
-          </div>
-          <!-- end of col-md-6 -->
-        </div>
-        <!-- end of row -->
-        <br>
-        <br>
-        <!-- Google maps -->
-        <div id="googleMap" style="width:100%;height:50%;"></div>
-      </div>
-      <!-- end of col-md-6 -->
-
-      <div class="col-md-6" id="contact_us_title_div">
-        <h1 id="contact_us_title">Contact us </h1>
-      </div>
-      <!-- end of col-md-6 -->
-    </div>
-    <!-- end of row -->
+    <%= render @contact_us.html.to_s %>
   </section>
   <!-- end of contact us -->
 
 
   <footer class="footer-distributed">
-
-    <div class="footer-right">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
-    </div>
-    <!-- end of footer-right -->
-
-    <div class="footer-left">
-      <p>Company Name &copy; 2015</p>
-      <br>
-      <p>Powered by Trustious</p>
-    </div>
-    <!-- end of footer-left -->
-
+    <%= render @footer.html.to_s %>
   </footer>
   <!-- end of footer -->
