@@ -9,7 +9,7 @@
 template = Template.new
 template.name = 'template-1'
 template.thumbnail_path = 'template-1/thumb.png'
-template.template_path = 'template-1/index.html'
+template.template_path = 'template/template-1/index.html'
 template.save
 
 theme = Theme.new
