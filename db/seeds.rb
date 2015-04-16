@@ -64,7 +64,7 @@ footer.save
 
 template = Template.new
 template.name = 'template-2'
-# template.thumbnail_path = 'template-2/thumb.png'
+template.thumbnail_path = 'template-2/thumb.png'
 template.template_path = 'template/template-2/index.html.erb'
 template.save
 
