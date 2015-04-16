@@ -8,8 +8,8 @@
 <!-- end of header-main -->
 <div class="container main-cont">
   <h3>Step 1: choose a template to start customizing</h3>
-  <!-- row with 2 templates -->
-  <% @template= @templates.first %>
+
+  <% @templates.each do |@template| %>
     <div class="row">
       <!-- template thumbnail -->
       <div class="col-md-6">
@@ -23,20 +23,10 @@
             </div>
         </div>
       </div>
-      <!-- template thumbnail -->
-      <div class="col-md-6">
-        <div class="thumbnail">
-          <%= image_tag( "21.jpg", class: "img-responsive" ) %>
-            <div class="caption">
-              <div class="caption-comp">
-                <a href="#" class="btn btn-default">View</a>
-                <a href="#" class="btn btn-default">Choose</a>
-              </div>
-            </div>
-        </div>
-      </div>
     </div>
     <!-- end of row -->
+    <% end %>
+    
     <!-- row with 2 templates -->
     <div class="row">
       <!-- template thumbnail -->
