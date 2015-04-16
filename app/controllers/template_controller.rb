@@ -5,7 +5,17 @@ class TemplateController < ApplicationController
 
 	def show
 		@template = Template.find(params[:id])
-		render :template => @template.template_path.to_s   # path should be in the scope of assets ==> 'template/
-																											 # template-1/index.html.erb'
+
+		@nav = NavBar.where("templates_id = ?",@template.id).first
+		@home_section = HomeSection.where("templates_id = ?",@template.id).first
+		@about_section = AboutSection.where("templates_id = ?",@template.id).first
+		@catalogue_section = CatalogueSection.where("templates_id = ?",@template.id).first
+		@contact_us_section = ContactUsSection.where("templates_id = ?",@template.id).first
+		@footer = Footer.where("templates_id = ?",@template.id).first
+
+		render @template.template_path.to_s
+
+		# render :file => "#{Rails.root}/public/404", :layout => false, :status => :not_found
+
 	end
 end
