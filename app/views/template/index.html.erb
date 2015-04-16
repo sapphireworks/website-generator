@@ -9,8 +9,8 @@
 <div class="container main-cont">
   <h3>Step 1: choose a template to start customizing</h3>
 
-  <% @templates.each do |template| %>
-    <div class="row">
+  <div class="row">
+    <% @templates.each do |template| %>
       <!-- template thumbnail -->
       <div class="col-md-6">
         <div class="thumbnail">
@@ -23,9 +23,9 @@
             </div>
         </div>
       </div>
-    </div>
-    <!-- end of row -->
     <% end %>
+  </div>
+  <!-- end of row -->
 
     <!-- row with 2 templates -->
     <div class="row">
