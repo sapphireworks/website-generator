@@ -43,7 +43,7 @@ catalogue_section.templates_id = 1
 catalogue_section.themes_id = 1
 catalogue_section.save
 
-contact_us_section = CatalogueSection.new
+contact_us_section = ContactUsSection.new
 contact_us_section.name = 'normal-contact-with-map'
 contact_us_section.html = 'contact-us-sections/_1.html.erb'
 contact_us_section.templates_id = 1
