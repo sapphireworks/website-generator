@@ -8,35 +8,25 @@
 <!-- end of header-main -->
 <div class="container main-cont">
   <h3>Step 1: choose a template to start customizing</h3>
-  <!-- row with 2 templates -->
-  <% @template= @templates.first %>
-    <div class="row">
+
+  <div class="row">
+    <% @templates.each do |template| %>
       <!-- template thumbnail -->
       <div class="col-md-6">
         <div class="thumbnail">
-          <%= image_tag(@template.thumbnail_path , class: "img-responsive") %>
+          <%= image_tag(template.thumbnail_path , class: "img-responsive") %>
             <div class="caption">
               <div class="caption-comp">
-                <%= link_to "View", {:action=> 'show' ,:id => @template.id} , class: "btn btn-default" %>
-                  <a href="customize" class="btn btn-default">Choose</a>
+                <%= link_to "View", {:action=> 'show' ,:id => template.id} , class: "btn btn-default" %>
+                <%= link_to "Choose", "template/customize" , class: "btn btn-default" %>
               </div>
             </div>
         </div>
       </div>
-      <!-- template thumbnail -->
-      <div class="col-md-6">
-        <div class="thumbnail">
-          <%= image_tag( "21.jpg", class: "img-responsive" ) %>
-            <div class="caption">
-              <div class="caption-comp">
-                <a href="#" class="btn btn-default">View</a>
-                <a href="#" class="btn btn-default">Choose</a>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of row -->
+    <% end %>
+  </div>
+  <!-- end of row -->
+
     <!-- row with 2 templates -->
     <div class="row">
       <!-- template thumbnail -->
