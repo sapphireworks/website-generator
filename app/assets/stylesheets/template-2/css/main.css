@@ -17,41 +17,36 @@
 
 #title {
     position: absolute;
-    margin: auto;
     top: 35%;
     left:0;
     right:0;
-    bottom:0;
-    font-size: 50px;
+    transform: translateX(-0%) translateY(-35%);
+    font-size: 8vmin;
 }
 
 #seperation_line {
     position: absolute;
-    margin: auto;
-    top: 0;
+    top: 41%;
     left:0;
     right:0;
-    bottom:13%;
-    color: black;
+    transform: translateX(-0%) translateY(-41%);
 }
 
 #motto {
     position: absolute;
-    margin: auto;
     top: 45%;
     left:0;
     right:0;
-    bottom:0;
-    font-size: 25px;
+    transform: translateX(-0%) translateY(-45%);
+    font-size: 3vmin;
 }
 
 #nav {
     position: absolute;
-    margin: auto;
     top: 5%;
-    left:37%;
-    right:0;
-    bottom:0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5%);
+    font-size: 2vmin;
 }
 
 .wrapper {
@@ -60,7 +55,7 @@
 
 a {
 color: black;
-font-size: 15px;
+font-size: 2vmin;
 }
 
 .container{
@@ -70,13 +65,13 @@ font-size: 15px;
 
 
 #about_us_title_div{
-  text-align: center;
+    text-align: center;
     height: 100vh;
 }
 
 #about_us_title{
-  font-size: 52px;
-  position: absolute;
+    font-size: 8vmin;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -87,15 +82,17 @@ font-size: 15px;
 }
 
 #about_us_text{
-  position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 100%;
+    width: 90%;
+    font-size: 2.4vmin;
+    margin: auto;
 }
 
 #catalogue_title{
-  font-size: 52px;
+  font-size: 8vmin;
 }
 
 #catalogue_div
@@ -117,30 +114,53 @@ font-size: 15px;
 
 
 #contact_us_title_div{
-  text-align: center;
-    height: 100vh;
+   text-align: center; 
+
 }
 
 #contact_us_title{
-  font-size: 52px;
-  position: absolute;
-    top: 50%;
+    font-size: 8vmin;
+    position: absolute;
+    top: 40%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-40%);
 }
 
 #catalogue{
     text-align: center;
 }
 
+.img-thumbnail
+{
+  max-width: 50vmin;
+  max-height: 50vmin;
+
+}
+
 #contact_us{
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 h3{
   font-weight: bold;
+  font-size: 3.2vmin;
+}
+
+h4{
+  font-size: 2.5vmin;
 }
 
 footer{
   text-align: center;
+}
+
+#google-map{
+
+  max-height: 50vmin;
+  max-width: 100vmin;
+}
+#break
+{
+  height: 100vh;
 }
