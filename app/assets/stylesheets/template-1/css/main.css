@@ -33,7 +33,8 @@ body {
   font-size: 25px; }
 
 body {
-  font-family: "Quattrocento Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Quattrocento Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+color: #000000;}
 
 /**
  * Components
@@ -96,19 +97,19 @@ body {
     top: 0;
     left: 0;
     padding: 20px;
-    background: rgba(44, 63, 82, 0.9);
-    color: #ed4e6e; }
+    background: #ececec;
+    color: #000000; }
     .grid figcaption h3 {
       margin: 0;
       padding: 0;
-      color: #fff; }
+      color: #000000; }
     .grid figcaption a {
       text-align: center;
       padding: 5px 10px;
       border-radius: 2px;
       display: inline-block;
-      background: #ed4e6e;
-      color: #fff; }
+      background: #ececec;
+      color: #000000; }
 
 .cs-style-3 figure {
   overflow: hidden; }
@@ -132,7 +133,8 @@ body {
     .cs-style-3 figure figcaption a {
       position: absolute;
       bottom: 20px;
-      right: 20px; }
+      right: 20px;
+      background: #d2d2d2; }
 
 .cs-style-3 figure .no-touch .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
@@ -169,7 +171,8 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff; }
+  background-color: #d2d2d2; 
+}
   .navbar-custom .navbar-brand {
     font-weight: 700; }
     .navbar-custom .navbar-brand:focus {
@@ -191,23 +194,31 @@ body {
     transition: background 0.3s ease-in-out; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
       outline: none;
-      background-color: rgba(255, 255, 255, 0.3); }
+      background-color: #ececec; }
 
 @media (min-width: 767px) {
   .navbar {
     padding: 5px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: rgba(255, 255, 255, 0.9);
+    background: #d2d2d2;
     -webkit-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out,padding 0.5s ease-in-out; }
 
   .top-nav-collapse {
     padding: 0;
-    background-color: #fff; }
+    background-color: #d2d2d2; }
 
   .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  }
+#footer
+{
+  background-color: #d2d2d2;
+}
+  }
+}
+}
 
 /*# sourceMappingURL=main.css.map */
