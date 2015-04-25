@@ -4,8 +4,9 @@
 <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js', 'data-turbolinks-track' => true  %>
 <%= javascript_include_tag 'template-2/app', 'data-turbolinks-track' => true  %>
 <% end %>
-<!-- TODO this template should separate home and nav , all is in home till now -->
 <div class="container-fluid">
+    <!-- nav pills -->
+    <%= render @nav.html.to_s %>
 	<!-- Centre image and title -->
 	<section id='home'>
 	  <%= render @home_section.html.to_s %>
