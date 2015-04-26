@@ -73,7 +73,12 @@ theme.name = 'light-wide'
 theme.templates_id = 2
 theme.save
 
-# FIXME No nav yet
+navbar = NavBar.new
+navbar.name='nav-pills'
+navbar.html = 'template/navs/nav_2.html.erb'
+navbar.templates_id = 2
+navbar.themes_id = 2
+navbar.save
 
 home_section = HomeSection.new
 home_section.name = 'nav-eater'
