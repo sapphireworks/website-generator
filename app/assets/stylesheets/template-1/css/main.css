@@ -194,7 +194,8 @@ color: #000000;}
     transition: background 0.3s ease-in-out; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
       outline: none;
-      background-color: #ececec; }
+      color : #ececec;
+      background-color: transparent; }
 
 @media (min-width: 767px) {
   .navbar {
