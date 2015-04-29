@@ -1,0 +1,9 @@
+/*.galleryThumbnail {
+  width: 100px;
+  height: 100px;
+  overflow:hidden;
+}*/
+#galleryThumbnail {
+  max-width: 250px;
+  max-height: 250px;
+}
