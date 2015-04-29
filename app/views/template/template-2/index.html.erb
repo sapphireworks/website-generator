@@ -4,28 +4,32 @@
 <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js', 'data-turbolinks-track' => true  %>
 <%= javascript_include_tag 'template-2/app', 'data-turbolinks-track' => true  %>
 <% end %>
-<!-- TODO this template should separate home and nav , all is in home till now -->
-<!-- Centre image and title -->
-<section id='home'>
-  <%= render @home_section.html.to_s %>
-</section>
-<!-- end of #home -->
-<!-- about us section -->
-<section id="about-section">
-  <%= render @about_section.html.to_s %>
-</section>
-<!-- end of #about-section -->
-<!-- catalogue section -->
-<section id="catalogue-section">
-  <%= render @catalogue_section.html.to_s %>
-</section>
-<!-- end of #catalogue-section -->
-<!-- contact us section -->
-<section id="contact-us-section">
-  <%= render @contact_us_section.html.to_s %>
-</section>
-<!-- end of #contact-us -->
+<div class="container-fluid">
+    <!-- nav pills -->
+    <%= render @nav.path.to_s %>
+	<!-- Centre image and title -->
+	<section id='home'>
+	  <%= render @home_section.path.to_s %>
+	</section>
+	<!-- end of #home -->
+	<!-- about us section -->
+	<section id="about-section">
+	  <%= render @about_section.path.to_s %>
+	</section>
+	<!-- end of #about-section -->
+	<!-- catalogue section -->
+	<section id="catalogue-section">
+	  <%= render @catalogue_section.path.to_s %>
+	</section>
+	<!-- end of #catalogue-section -->
+	<!-- contact us section -->
+	<section id="contact-us-section">
+	  <%= render @contact_us_section.path.to_s %>
+	</section>
+	<!-- end of #contact-us -->
+</div>
+<!-- end of container-fluid -->
 <footer class="footer-distributed">
-  <%= render @footer.html.to_s %>
+  <%= render @footer.path.to_s %>
 </footer>
 <!-- end of footer -->

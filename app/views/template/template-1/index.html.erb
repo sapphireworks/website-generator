@@ -6,31 +6,31 @@
 <% end %>
 <div class="container">
 
-  <%= render @nav.html.to_s %>
+  <%= render @nav.path.to_s %>
 
   <!-- Home Section -->
   <section id='home'>
-    <%= render @home_section.html.to_s %>
+    <%= render @home_section.path.to_s %>
   </section>
   <!-- end of section#home -->
 
   <hr>
   <!-- About Section -->
   <section class="section" id="about-section">
-    <%= render @about_section.html.to_s %>
+    <%= render @about_section.path.to_s %>
   </section>
   <!-- end of section -->
   <hr>
   <!-- Catalogue section -->
   <section class="section" id="catalogue-section">
-    <%= render @catalogue_section.html.to_s %>
+    <%= render @catalogue_section.path.to_s %>
   </section>
   <hr>
   <!-- Contact us section -->
   <section class="section" id="contact-us-section">
-    <%= render @contact_us_section.html.to_s %>
+    <%= render @contact_us_section.path.to_s %>
   </section>
-</div>
-<div class="footer">
-    <%= render @footer.html.to_s %>
-  </div>
+
+  <footer>
+    <%= render @footer.path.to_s %>
+  </footer>
