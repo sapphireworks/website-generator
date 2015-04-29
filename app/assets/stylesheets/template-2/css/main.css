@@ -1,172 +1,215 @@
-#centre_img {
+/**
+ *  Normalize , variables , mixins , ...
+ */
+/* Normalize */
+html,
+body {
+  margin: 0px;
+  padding: 0px; }
+
+.section {
+  padding: 30px 0; }
+
+/* Base styling */
+h3 {
+  font-weight: bold;
+  font-size: 2vmax; }
+
+h4 {
+  font-size: 1.3vmax; }
+
+a {
+  color: black;
+  font-size: 1.25vmax; }
+
+/**
+ * Components
+ */
+#center_img {
   height: 100vh;
   min-height: 500px;
   width: 100%;
   opacity: 0.9;
- filter: url(blur.svg#blur);
- -webkit-filter: blur(2px); 
- filter: blur(2px);
-}
+  filter: url(blur.svg#blur);
+  -webkit-filter: blur(2px);
+  filter: blur(2px); }
 
 .wrap {
-    width: auto;
-    height:auto;
-    margin: auto;
-    text-align:center;
-    position:relative;
-}
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  position: relative; }
 
 #title {
-    position: absolute;
-    top: 35%;
-    left:0;
-    right:0;
-    transform: translateX(-0%) translateY(-35%);
-    font-size: 5vmax;
-}
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  transform: translateX(0%) translateY(-35%);
+  font-size: 5vmax; }
 
-#seperation_line {
-    position: absolute;
-    top: 41%;
-    left:0;
-    right:0;
-    transform: translateX(-0%) translateY(-41%);
-}
+#separation_line {
+  position: absolute;
+  top: 41%;
+  left: 0;
+  right: 0;
+  transform: translateX(0%) translateY(-41%); }
 
 #motto {
-    position: absolute;
-    top: 45%;
-    left:0;
-    right:0;
-    transform: translateX(-0%) translateY(-45%);
-    font-size: 2vmax;
-}
-
-#nav {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-5%);
-    font-size: 1vmax;
-    z-index: 1000;
-}
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: translateX(0%) translateY(-45%);
+  font-size: 2vmax; }
 
 .wrapper {
-    text-align: center;
-}
+  text-align: center; }
 
-a {
-color: black;
-font-size: 1.25vmax;
-}
-
-.container{
+.container {
   text-align: center;
   height: 100vh;
-  min-height: 500px;
-}
+  min-height: 500px; }
 
+#about_us_title_div {
+  text-align: center;
+  height: 100vh;
+  min-height: 500px; }
 
-#about_us_title_div{
-    text-align: center;
-    height: 100vh;
-    min-height: 500px;
-}
-
-#about_us_title{
-    font-size: 5vmax;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-#about_us_text_div{
-    height: 100vh;
-    min-height: 500px;
-}
-
-#about_us_text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 90%;
-    font-size: 1.4vmax;
-    margin: auto;
-}
-
-#catalogue_title{
+#about_us_title {
   font-size: 5vmax;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
 
-#catalogue_div
-{
+#about_us_text_div {
+  height: 100vh;
+  min-height: 500px; }
+
+#about_us_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  font-size: 1.4vmax;
+  margin: auto; }
+
+#catalogue_title {
+  font-size: 5vmax; }
+
+#catalogue_div {
   width: 100%;
   height: 100vh;
   min-height: 500px;
-  position: relative;
-}
+  position: relative; }
 
-#catalogue_sub_div
-{
+#catalogue_sub_div {
   width: 100%;
   height: auto;
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
 
+#contact_us_title_div {
+  text-align: center; }
 
-#contact_us_title_div{
-   text-align: center; 
+#contact_us_title {
+  font-size: 4vmax;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%); }
 
-}
+#catalogue {
+  text-align: center; }
 
-#contact_us_title{
-    font-size: 4vmax;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-40%);
-}
-
-#catalogue{
-    text-align: center;
-}
-
-.img-thumbnail
-{
+.img-thumbnail {
   max-width: 40vmax;
-  max-height: 40vmax;
-}
+  max-height: 40vmax; }
 
-#contact_us{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+#contact_us {
+  margin-left: 10%;
+  margin-right: 10%; }
 
-h3{
-  font-weight: bold;
-  font-size: 2vmax;
-}
-
-h4{
-  font-size: 1.3vmax;
-}
-
-footer{
-  text-align: center;
-}
-
-#google-map{
-
-  max-height: 50vw;
-  max-width: 100vw;
-}
-#break
-{
+#break {
   height: 100vh;
-  min-height: 500px;
-}
+  min-height: 500px; }
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-top: 80px; }
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0; }
+
+/* Footer links */
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0; }
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit; }
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px; }
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center; }
+
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px; }
+
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8; } }
+footer {
+  text-align: center; }
+
+#google-map {
+  max-height: 50vw;
+  max-width: 100vw; }
+
+#nav {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-5%);
+  font-size: 1vmax;
+  z-index: 1000; }
+
+/*# sourceMappingURL=main.css.map */
