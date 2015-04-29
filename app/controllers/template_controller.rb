@@ -18,4 +18,13 @@ class TemplateController < ApplicationController
 		# render :file => "#{Rails.root}/public/404", :layout => false, :status => :not_found
 
 	end
+
+	def catalogue
+		@template = Template.find(params[:id])
+
+		@nav = NavBar.where("templates_id = ?", @template.id).first;
+		@footer = Footer.where("templates_id = ?", @template.id).first;
+
+		render @template.catalogue_path.to_s
+	end
 end

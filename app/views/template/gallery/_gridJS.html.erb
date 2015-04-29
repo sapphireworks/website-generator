@@ -1,0 +1,18 @@
+<ul id="og-grid" class="og-grid">
+	<li>
+		<a href="http://cargocollective.com/jaimemartinez/" data-largesrc=<%= image_path "20.jpg" %> data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+			<img src= <%= image_path "thumbs/th1.jpg" %> alt="img01"/>
+		</a>
+	</li>
+	<li>
+		<a href="http://cargocollective.com/jaimemartinez/" data-largesrc=<%= image_path "21.jpg" %> data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+			<img src= <%= image_path "thumbs/th2.jpg" %> alt="img02"/>
+		</a>
+	</li>
+</ul>
+<%= javascript_include_tag 'gallery/grid', 'data-turbolinks-track' => true  %>
+<script>
+			$(function() {
+				Grid.init();
+			});
+</script>

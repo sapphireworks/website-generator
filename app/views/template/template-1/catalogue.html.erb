@@ -1,0 +1,18 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'template-1/css/main' , media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'gallery/component', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'gallery/modernizr.custom', 'data-turbolinks-track' => true  %>
+<% end %>
+<div class="container">
+
+  <%= render @nav.html.to_s %>
+  <div class="jumbotron">
+    <h1>CATALOGUE</h1>
+  </div>
+  <%= render "template/gallery/gridJS.html.erb" %>
+  <%= link_to "< Back", controller: "template", action: "show", id: 1 %>
+  <footer>
+    <%= render @footer.html.to_s %>
+  </footer>
+</div>
