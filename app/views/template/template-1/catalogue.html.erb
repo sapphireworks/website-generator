@@ -7,13 +7,13 @@
   <% end %>
 <div class="container">
 
-  <%= render @nav.html.to_s %>
+  <%= render @nav.path.to_s %>
   <div class="jumbotron">
     <h1>CATALOGUE</h1>
   </div>
   <%= render "template/gallery/gridJS.html.erb" %>
   <%= link_to "< Back", controller: "template", action: "show", id: 1 %>
   <footer>
-    <%= render @footer.html.to_s %>
+    <%= render @footer.path.to_s %>
   </footer>
 </div>
