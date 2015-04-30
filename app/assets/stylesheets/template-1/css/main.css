@@ -152,7 +152,7 @@ body {
   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s; }
 
-/* Footer styles */
+/* Grey Footer styles */
 .footer-grey {
   position: relative;
   width: 100%;
@@ -178,6 +178,64 @@ body {
   padding-right: 20px; }
 
 .footer-grey .buttons .fa {
+  color: #000;
+  height: 12px; }
+
+/* Green Footer styles */
+.footer-green {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 46px;
+  z-index: 1;
+  display: table;
+  background-color: #4ec07e; }
+
+.footer-green .footer-content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.footer-green .footer-top-content {
+  width: 100%;
+  margin: auto; }
+
+.footer-green .powered-by-trustious {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  padding-right: 20px; }
+
+.footer-green .buttons .fa {
+  color: #000;
+  height: 12px; }
+
+/* Cappuccino Footer styles */
+.footer-cappuccino {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 46px;
+  z-index: 1;
+  display: table;
+  background-color: #be9b7b; }
+
+.footer-cappuccino .footer-content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.footer-cappuccino .footer-top-content {
+  width: 100%;
+  margin: auto; }
+
+.footer-cappuccino .powered-by-trustious {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  padding-right: 20px; }
+
+.footer-cappuccino .buttons .fa {
   color: #000;
   height: 12px; }
 
