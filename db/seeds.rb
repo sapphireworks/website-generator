@@ -46,6 +46,13 @@ catalogue_section.templates_id = 1
 catalogue_section.themes_id = 1
 catalogue_section.save
 
+#new catalogue section
+catalogue_section = CatalogueSection.new
+catalogue_section.path = 'template/catalogue-sections/catalogue_section_3.html.erb'
+catalogue_section.templates_id = 1
+catalogue_section.themes_id = 3
+catalogue_section.save
+
 contact_us_section = ContactUsSection.new
 contact_us_section.name = 'normal-contact-with-map'
 contact_us_section.path = 'template/contact-us-sections/contact_us_section_1.html.erb'
