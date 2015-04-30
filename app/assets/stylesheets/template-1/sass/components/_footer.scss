@@ -1,0 +1,29 @@
+ /* Footer styles */
+ .footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 46px;
+  z-index: 1;
+  display: table;
+  background-color: $footer-color;
+}
+.footer .footer-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.footer .footer-top-content {
+  width: 100%;
+  margin: auto;
+}
+.footer .powered-by-trustious {
+  color: $dark-color;
+  font-size: 18px;
+  text-align: center;
+  padding-right: 20px;
+}
+.footer .buttons .fa{
+  color: $dark-color;
+  height: 12px;
+  }

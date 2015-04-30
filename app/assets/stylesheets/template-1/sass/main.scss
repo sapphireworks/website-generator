@@ -1,43 +1,16 @@
-/*
-Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
-        on line 218 of app/assets/stylesheets/template-1/css/main.css
-
-213: 
-214:   .navbar-custom.top-nav-collapse {
-215:     border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
-216:   }
-217:   
-218:  .footer {
-219:   position: relative;
-220:   width: 100%;
-221:   bottom: 0;
-222:   left: 0;
-223:   height: 46px;
-
-Backtrace:
-app/assets/stylesheets/template-1/css/main.css:218
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:473:in `block in tabulate'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:431:in `each'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:431:in `each_with_index'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:431:in `tabulate'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:396:in `_to_tree'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
-/home/abdelrahman/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
-/home/abdelrahman/.rbenv/versions/2.1.5/bin/sass:23:in `load'
-/home/abdelrahman/.rbenv/versions/2.1.5/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 218 of app/assets/stylesheets/template-1/css/main.css\A \A 213: \A 214:   .navbar-custom.top-nav-collapse {\A 215:     border-bottom: 1px solid rgba(255, 255, 255, 0.3); \A 216:   }\A 217:   \A 218:  .footer {\A 219:   position: relative;\A 220:   width: 100%;\A 221:   bottom: 0;\A 222:   left: 0;\A 223:   height: 46px;"; }
+/**
+ *  Normalize , variables , mixins , ...
+ */
+@import "base/_normalize.scss";
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_base.scss";
+@import "base/_typography.scss";
+/**
+ * Components
+ */
+@import "components/_components.scss";
+@import "components/_footer.scss";
+@import "components/_map.scss";
+@import "components/_dividers.scss";
+@import "components/_nav.scss";

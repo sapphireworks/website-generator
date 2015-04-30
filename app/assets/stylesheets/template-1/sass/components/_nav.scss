@@ -34,10 +34,13 @@
         -moz-transition: background 0.3s ease-in-out;
         transition: background 0.3s ease-in-out;
         &:hover,
-        &:focus,
+        &:focus{
+          color: $text-color;
+          background-color: transparent;
+        }
         &.active {
           outline: none;
-          background-color: transparentize($navbar-color, 0.7);
+          background-color:$dark-color; 
         }
       }
     }
@@ -61,32 +64,5 @@
     border-bottom: 1px solid transparentize($navbar-color, 0.7);
   }
   
-  .footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  height: 46px;
-  z-index: 1;
-  display: table;
-  background-color: $navbar-color;
-}
-.footer .footer-content {
-  display: table-cell;
-  vertical-align: middle;
-}
-.footer .footer-top-content {
-  width: 100%;
-  margin: auto;
-}
-.footer .powered-by-trustious {
-  color: $dark-color;
-  font-size: 18px;
-  text-align: center;
-  padding-right: 20px;
-}
-.footer .buttons .fa{
-  color: $dark-color;
-  height: 12px;
-  }
+ 
 }
