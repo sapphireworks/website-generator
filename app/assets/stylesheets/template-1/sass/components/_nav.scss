@@ -34,13 +34,14 @@
         -moz-transition: background 0.3s ease-in-out;
         transition: background 0.3s ease-in-out;
         &:hover,
-        &:focus{
+        &:active {
+         outline: none;
           color: $text-grey-color;
           background-color: transparent;
         }
-        &.active {
-          outline: none;
-          background-color:$dark-color; 
+        &:focus{
+          color: $dark-color;
+          background-color: transparent;
         }
       }
     }

@@ -276,12 +276,13 @@ body {
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out; }
-    .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+    .navbar-custom .nav li a:hover, .navbar-custom .nav li a:active {
+      outline: none;
       color: #ececec;
       background-color: transparent; }
-    .navbar-custom .nav li a.active {
-      outline: none;
-      background-color: #000; }
+    .navbar-custom .nav li a:focus {
+      color: #000;
+      background-color: transparent; }
 
 @media (min-width: 767px) {
   .navbar {
