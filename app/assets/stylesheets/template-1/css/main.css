@@ -153,7 +153,7 @@ body {
   transition: transform 0.4s, opacity 0.1s; }
 
 /* Footer styles */
-.footer {
+.footer-grey {
   position: relative;
   width: 100%;
   bottom: 0;
@@ -163,21 +163,21 @@ body {
   display: table;
   background-color: #d2d2d2; }
 
-.footer .footer-content {
+.footer-grey .footer-content {
   display: table-cell;
   vertical-align: middle; }
 
-.footer .footer-top-content {
+.footer-grey .footer-top-content {
   width: 100%;
   margin: auto; }
 
-.footer .powered-by-trustious {
+.footer-grey .powered-by-trustious {
   color: #000;
   font-size: 18px;
   text-align: center;
   padding-right: 20px; }
 
-.footer .buttons .fa {
+.footer-grey .buttons .fa {
   color: #000;
   height: 12px; }
 
@@ -223,7 +223,7 @@ body {
       background-color: transparent; }
     .navbar-custom .nav li a.active {
       outline: none;
-      background-color: #d2d2d2; }
+      background-color: #000; }
 
 @media (min-width: 767px) {
   .navbar {
