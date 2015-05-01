@@ -49,13 +49,6 @@ a {
   transform: translateX(0%) translateY(-35%);
   font-size: 5vmax; }
 
-#separation_line {
-  position: absolute;
-  top: 41%;
-  left: 0;
-  right: 0;
-  transform: translateX(0%) translateY(-41%); }
-
 #motto {
   position: absolute;
   top: 45%;
@@ -209,7 +202,7 @@ footer {
 
  */
 .footer-lightRed {
-  background-color: #292c2f;
+  background-color: #E74C3C;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -351,6 +344,13 @@ footer {
   background-color: #4E90D2;
   z-index: 1000; }
 
+#nav-blue li a:hover,
+#nav-blue li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #eee;
+  background-color: #4e90d2; }
+
 /* Light Red nav-bar*/
 #nav-lightRed {
   position: absolute;
@@ -358,8 +358,15 @@ footer {
   left: 50%;
   transform: translateX(-50%) translateY(-5%);
   font-size: 1vmax;
-  background-color: #292c2f;
+  background-color: #E74C3C;
   z-index: 1000; }
+
+#nav-lightRed li a:hover,
+#nav-lightRed li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #eb6f62;
+  background-color: #E74C3C; }
 
 /* Pink nav-bar */
 #nav-pink {
@@ -370,5 +377,12 @@ footer {
   font-size: 1vmax;
   background-color: #94516a;
   z-index: 1000; }
+
+#nav-pink li a:hover,
+#nav-pink li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #8b636c;
+  background-color: #94516a; }
 
 /*# sourceMappingURL=main.css.map */
