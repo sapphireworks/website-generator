@@ -3,12 +3,12 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $(document).on 'change', '#countries_select', (evt) ->
-    $.ajax 'update_cities',
+  $(document).on 'change', '#themes_select', (evt) ->
+    $.ajax 'update_themes',
       type: 'GET'
       dataType: 'script'
       data: {
-        country_id: $("#countries_select option:selected").val()
+        theme_id: $("#themes_select option:selected").val()
       }
       error: (jqXHR, textStatus, errorThrown) ->
         console.log("AJAX Error: #{textStatus}")
