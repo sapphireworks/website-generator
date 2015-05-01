@@ -22,7 +22,9 @@
             <div class="caption">
               <div class="caption-comp">
                 <%= link_to "View", {:action => 'show' ,:id => template.id} , class: "btn btn-default" %>
-                <%= link_to "Choose", {action: 'customize'} , class: "btn btn-default" %>
+
+                <%= link_to "Choose", {:action => 'customize' ,:id => template.id,:theme_id => 1} , class: "btn btn-default" %>
+
               </div>
             </div>
         </div>
