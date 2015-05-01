@@ -51,7 +51,17 @@ class TemplateController < ApplicationController
 	end
 
 	def update_themes
+		@template = Template.find(params[:id])
+	
+		@themes = Theme.where("templates_id = ?",@template.id)
+		@theme = Theme.find(params[:theme_id])
 
+		@nav_bars = NavBar.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@home_sections = HomeSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@about_sections = AboutSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@catalogue_sections = CatalogueSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@contact_us_sections = ContactUsSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@footers = Footer.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
 	end
 
 	def catalogue
