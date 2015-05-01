@@ -23,7 +23,7 @@ class TemplateController < ApplicationController
 	end
 
 	def customize
-		client = Client.find(1) #FIXME Hardcoded ! , We don't know how to authorize that client !
+		client = Client.find_by(id: 3) #FIXME Hardcoded ! , We don't know how to authorize that client !
 
 		if client.nil?
 			flash[:error] = "you are not an authorized user , please try again"
