@@ -1,1 +1,5 @@
-$("#cities_select").empty().append("<%= escape_javascript(render(:partial => @cities)) %>")
+$("#navbar_select").empty().append("<%= escape_javascript(render(:partial => @nav_bars)) %>")
+$("#home_select").empty().append("<%= escape_javascript(render(:partial => @home_sections)) %>")
+$("#catalogue_select").empty().append("<%= escape_javascript(render(:partial => @about_sections)) %>")
+$("#about_select").empty().append("<%= escape_javascript(render(:partial => @catalogue_sections)) %>")
+$("#contact_select").empty().append("<%= escape_javascript(render(:partial => @contact_us_sections)) %>")
