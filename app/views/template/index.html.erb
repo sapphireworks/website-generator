@@ -1,3 +1,7 @@
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, class: "alert alert-danger" %>
+<% end %>
+
 <div class="header-main">
   <div class="header-overlay">
     <h1>Trustious website generator</h1>
@@ -17,8 +21,8 @@
           <%= image_tag(template.thumbnail_path , class: "img-responsive") %>
             <div class="caption">
               <div class="caption-comp">
-                <%= link_to "View", {:action=> 'show' ,:id => template.id} , class: "btn btn-default" %>
-                <%= link_to "Choose", "template/customize" , class: "btn btn-default" %>
+                <%= link_to "View", {:action => 'show' ,:id => template.id} , class: "btn btn-default" %>
+                <%= link_to "Choose", {action: 'customize'} , class: "btn btn-default" %>
               </div>
             </div>
         </div>

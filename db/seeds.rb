@@ -115,3 +115,7 @@ footer.path = "template/footers/footer_2.html.erb"
 footer.templates_id = 2
 footer.themes_id = 2
 footer.save
+
+client = Client.new
+client.username = 'parador-flooring'
+client.save
