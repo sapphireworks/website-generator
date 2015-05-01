@@ -35,10 +35,9 @@ body {
 body {
   font-family: "Quattrocento Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.white_text
-{
-  color: white;
-} s
+.white_text {
+  color: white; }
+
 /**
  * Components
  */
@@ -249,7 +248,7 @@ body {
 #google-map {
   height: 300px;
   width: 100%; }
-  
+
 /*Dividers*/
 .section-heading-divider {
   height: 1px;
