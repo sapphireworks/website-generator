@@ -31,12 +31,11 @@ class TemplateController < ApplicationController
 
 		elsif client.data.nil?
 				url = "#{BASE_URL}#{client.username}/fspec-lightop.json"
-				json = open(url).read
-				client.data = json
+				#json = open(url).read
+				#client.data = json
 				client.save
 
 		end
-
 
 	end
 
