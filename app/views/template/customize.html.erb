@@ -13,15 +13,13 @@
 					        <p> Theme<p>
 	                            <%= form_for :customize, html: {method: "get"} do |f| %>
   								<%= f.collection_select :theme_id, @themes, :id, :name, {prompt: "Select a Theme"}, {class: "form-control"} %>
-  								<%= f.collection_select :nav_bar_id, @nav_bars, :id, :id, {prompt: "Select a Nav-Bar"}, {class: "form-control"} %>
-  								<%= f.collection_select :home_section_id, @home_sections, :id, :id, {prompt: "Select a Home Section"}, {class: "form-control"} %>
+  								<%= f.collection_select :nav_bar_id, @nav_bars, :id, :name, {prompt: "Select a Nav-Bar"}, {class: "form-control"} %>
+  								<%= f.collection_select :home_section_id, @home_sections, :id, :name, {prompt: "Select a Home Section"}, {class: "form-control"} %>
   								<%= f.collection_select :catalogue_section_id, @catalogue_sections, :id, :id, {prompt: "Select a Catalogue Section"}, {class: "form-control"} %>
-  								<%= f.collection_select :about_section_id, @about_sections, :id, :id, {prompt: "Select an About Section"}, {class: "form-control"} %>
-  								<%= f.collection_select :contact_us_section_id, @contact_us_sections, :id, :id, {prompt: "Select a Contact-us Section"}, {class: "form-control"} %>
+  								<%= f.collection_select :about_section_id, @about_sections, :id, :name, {prompt: "Select an About Section"}, {class: "form-control"} %>
+  								<%= f.collection_select :contact_us_section_id, @contact_us_sections, :id, :name, {prompt: "Select a Contact-us Section"}, {class: "form-control"} %>
   							<% end %>
-					</div>
-					
-					
+					</div>				
 		<!-- end of container -->
    </div>
    <!-- end of customization-cont -->

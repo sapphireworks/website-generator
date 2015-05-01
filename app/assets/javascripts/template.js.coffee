@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$ ->
+jQuery ->
   $(document).on 'change', '#themes_select', (evt) ->
     $.ajax 'update_themes',
       type: 'GET'
