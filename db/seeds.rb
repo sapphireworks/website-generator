@@ -12,6 +12,7 @@ template = Template.new
 template.name = 'template-1'
 template.thumbnail_path = 'template-1/thumb.png'
 template.template_path = 'template/template-1/index.html.erb'
+template.catalogue_path = 'template/template-1/catalogue.html.erb'
 template.save
 
 theme = Theme.new
@@ -73,6 +74,7 @@ template = Template.new
 template.name = 'template-2'
 template.thumbnail_path = 'template-2/thumb.png'
 template.template_path = 'template/template-2/index.html.erb'
+template.catalogue_path = 'template/template-1/catalogue.html.erb'
 template.save
 
 theme = Theme.new

@@ -132,6 +132,9 @@ a {
   height: 100vh;
   min-height: 500px; }
 
+.jumbotron {
+  padding-top: 100px; }
+
 /* Blue Footer */
 .footer-blue {
   background-color: #4e90d2;

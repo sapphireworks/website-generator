@@ -40,4 +40,13 @@ class TemplateController < ApplicationController
 
 	end
 
+
+	def catalogue
+		@template = Template.find(params[:id])
+
+		@nav = NavBar.where("templates_id = ?", @template.id).first;
+		@footer = Footer.where("templates_id = ?", @template.id).first;
+
+		render @template.catalogue_path.to_s
+	end
 end
