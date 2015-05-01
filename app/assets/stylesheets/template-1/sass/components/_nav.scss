@@ -1,10 +1,10 @@
 /* Navigation bar styles */
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid transparentize($navbar-grey-color, 0.7);
+  border-bottom: 1px solid transparentize($grey-color, 0.7);
   text-transform: uppercase;
   font-family: $headline-font-family;
-  background-color: $navbar-grey-color;
+  background-color: $grey-color;
   .navbar-brand {
     font-weight: 700;
     &:focus {
@@ -13,7 +13,7 @@
     .navbar-toggle {
       padding: 4px 6px;
       font-size: 16px;
-      color: $navbar-grey-color;
+      color: $grey-color;
       &:focus,
       &:active {
         outline: none;
@@ -27,7 +27,7 @@
     li {
       &.active {
         outline: none;
-        background-color: transparentize($navbar-grey-color, 0.7);
+        background-color: transparentize($grey-color, 0.7);
       }
       a {
         -webkit-transition: background 0.3s ease-in-out;
@@ -35,11 +35,11 @@
         transition: background 0.3s ease-in-out;
         &:hover,
         &:active {
-         outline: none;
+          outline: none;
           color: $text-grey-color;
           background-color: transparent;
         }
-        &:focus{
+        &:focus {
           color: $dark-color;
           background-color: transparent;
         }
@@ -52,18 +52,104 @@
     padding: 5px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparentize($navbar-grey-color, 0.1);
+    background: transparentize($grey-color, 0.1);
     -webkit-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
   }
   .top-nav-collapse {
     padding: 0;
-    background-color: $navbar-grey-color;
+    background-color: $grey-color;
   }
   .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid transparentize($navbar-grey-color, 0.7);
+    border-bottom: 1px solid transparentize($grey-color, 0.7);
   }
-  
- 
+}
+
+
+
+/* Cappuccino Navbar Style*/
+
+
+.navbar-cappuccino {
+  border-bottom: 1px solid transparentize($cappuccino-color, 0.7);
+  background-color: $cappuccino-color;
+  .navbar-brand {
+    .navbar-toggle {
+      color: $cappuccino-color;
+    }
+  }
+  .nav {
+    li {
+      &.active {
+        background-color: transparentize($cappuccino-color, 0.7);
+      }
+      a {
+        &:hover,
+        &:active {
+          color: $text-cappuccino-color;
+        }
+        &:focus {
+          color: $dark-color;
+        }
+      }
+    }
+  }
+}
+@media(min-width:$screen-xs-max) {
+  .nav-cuppiccino {
+    .navbar {
+      background: transparentize($cappuccino-color, 0.1);
+    }
+    .top-nav-collapse {
+      background-color: $cappuccino-color;
+    }
+    .navbar-custom.top-nav-collapse {
+      border-bottom: 1px solid transparentize($cappuccino-color, 0.7);
+    }
+  }
+}
+
+
+
+/* Green Navbar Style */
+
+
+.navbar-green {
+  border-bottom: 1px solid transparentize($green-color, 0.7);
+  background-color: $green-color;
+  .navbar-brand {
+    .navbar-toggle {
+      color: $green-color;
+    }
+  }
+  .nav {
+    li {
+      &.active {
+        background-color: transparentize($green-color, 0.7);
+      }
+      a {
+        &:hover,
+        &:active {
+          color: $text-green-color;
+        }
+        &:focus {
+          color: $dark-color;
+        }
+      }
+    }
+  }
+}
+@media(min-width:$screen-xs-max) {
+  .nav-green {
+    .navbar {
+      background: transparentize($green-color, 0.1);
+    }
+    .top-nav-collapse {
+      background-color: $green-color;
+    }
+    .navbar-custom.top-nav-collapse {
+      border-bottom: 1px solid transparentize($green-color, 0.7);
+    }
+  }
 }

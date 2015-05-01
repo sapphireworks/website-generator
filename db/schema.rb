@@ -35,12 +35,12 @@ ActiveRecord::Schema.define(version: 20150501145410) do
     t.integer  "templates_id",           limit: 4
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
+    t.text     "data",                   limit: 65535
     t.integer  "nav_bars_id",            limit: 4
     t.integer  "home_sections_id",       limit: 4
     t.integer  "about_sections_id",      limit: 4
     t.integer  "catalogue_sections_id",  limit: 4
     t.integer  "contact_us_sections_id", limit: 4
-    t.text     "data",                   limit: 65535
   end
 
   create_table "contact_us_sections", force: :cascade do |t|
