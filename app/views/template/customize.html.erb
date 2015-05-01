@@ -10,8 +10,7 @@
 <div class = "customization-cont">
 	<div class="container">
 					<div class="">
-					            <br><br><br>
-								 <p> Theme<p>
+					            <p> Theme<p>
 	                            <%= form_for :customize, html: {method: "get"} do |f| %>
   								<%= f.select :theme_id, options_for_select(@themes.collect { |theme| [theme.name.titleize, theme.id] }, 1), {}, { id: 'themes_select' } %>
   								<% end %>
@@ -20,35 +19,35 @@
 					 <div class="">
 			               <p> Nav-Bar<p>
 	                            <%= form_for :customize , html: {method: "get"} do |f| %>
-  								<%= f.select :theme_id, options_for_select(@nav_bars.collect { |nav| [nav.id, nav.id] }, 1), {}, { id: 'themes_select' } %>
+  								<%= f.select :theme_id, options_for_select(@nav_bars.collect { |nav| [nav.id, nav.id] }, 1), {}, { id: 'navbar_select' } %>
   								<% end %>
 					 </div>
 					
 					 <div class="">
 					       <p> Home Section<p>
 								<%= form_for :customize, html: {method: "get"} do |f| %>
-  								<%= f.select :theme_id, options_for_select(@home_sections.collect { |home_sec| [home_sec.id, home_sec.id] }, 1), {}, { id: 'themes_select' } %>
+  								<%= f.select :theme_id, options_for_select(@home_sections.collect { |home_sec| [home_sec.id, home_sec.id] }, 1), {}, { id: 'home_select' } %>
   								<% end %>
 					</div>
 
 					<div class="">
 					       <p> Catalogue Section<p>
 								<%= form_for :customize, html: {method: "get"} do |f| %>
-  								<%= f.select :theme_id, options_for_select(@catalogue_sections.collect { |catalouge| [catalouge.id, catalouge.id] }, 1), {}, { id: 'themes_select' } %>
+  								<%= f.select :theme_id, options_for_select(@catalogue_sections.collect { |catalouge| [catalouge.id, catalouge.id] }, 1), {}, { id: 'catalogue_select' } %>
   								<% end %>
 					</div>
 
 					<div class="">
 					       <p> About Section<p>
 								<%= form_for :customize, html: {method: "get"} do |f| %>
-  								<%= f.select :theme_id, options_for_select(@about_sections.collect { |about_sec| [about_sec.id, about_sec.id] }, 1), {}, { id: 'themes_select' } %>
+  								<%= f.select :theme_id, options_for_select(@about_sections.collect { |about_sec| [about_sec.id, about_sec.id] }, 1), {}, { id: 'about_select' } %>
   								<% end %>
 					</div>
 
 					<div class="">
 					       <p> Contact Us Section<p>
 								<%= form_for :customize, html: {method: "get"} do |f| %>
-  								<%= f.select :theme_id, options_for_select(@themes.collect { |contact_us_sec| [contact_us_sec.id, contact_us_sec.id] }, 1), {}, { id: 'themes_select' } %>
+  								<%= f.select :theme_id, options_for_select(@themes.collect { |contact_us_sec| [contact_us_sec.id, contact_us_sec.id] }, 1), {}, { id: 'contact_select' } %>
   								<% end %>
 					</div>
 					<!-- end of col-md-5 -->
