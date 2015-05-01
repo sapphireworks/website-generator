@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(version: 20150428201455) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.string   "name",           limit: 255
-    t.string   "catalogue_path", limit: 255
   end
 
   create_table "themes", force: :cascade do |t|
