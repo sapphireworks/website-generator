@@ -17,3 +17,4 @@
 //= require bootstrap.min
 //= require jquery.easing.min
 //= require owl.carousel
+//= require template
