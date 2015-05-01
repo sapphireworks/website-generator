@@ -99,8 +99,8 @@ body {
     top: 0;
     left: 0;
     padding: 20px;
-    background: rgba(44, 63, 82, 0.9);
-    color: #ed4e6e; }
+    background: rgba(55, 58, 61, 0.9);
+    color: #fff; }
     .grid figcaption h3 {
       margin: 0;
       padding: 0;
@@ -110,8 +110,8 @@ body {
       padding: 5px 10px;
       border-radius: 2px;
       display: inline-block;
-      background: #ed4e6e;
-      color: #fff; }
+      background: #fff;
+      color: rgba(55, 58, 61, 0.9); }
 
 .cs-style-3 figure {
   overflow: hidden; }
