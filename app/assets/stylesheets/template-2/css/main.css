@@ -139,6 +139,9 @@ a {
   height: 100vh;
   min-height: 500px; }
 
+.jumbotron {
+  padding-top: 100px; }
+
 .footer-distributed {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
