@@ -92,6 +92,7 @@ body {
     text-align: left;
     position: relative; }
   .grid figure {
+    max-width: 100%;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
@@ -298,6 +299,15 @@ body {
       color: #000;
       background-color: transparent; }
 
+  @media (max-width: 767){
+   .grid figure {
+    width: 100%;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    position: relative; }
+ }
 @media (min-width: 767px) {
   .navbar {
     padding: 5px 0;
