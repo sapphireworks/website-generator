@@ -35,10 +35,9 @@ body {
 body {
   font-family: "Quattrocento Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.white_text
-{
-  color: white;
-} s
+.white_text {
+  color: white; }
+
 /**
  * Components
  */
@@ -100,8 +99,8 @@ body {
     top: 0;
     left: 0;
     padding: 20px;
-    background: rgba(44, 63, 82, 0.9);
-    color: #ed4e6e; }
+    background: rgba(55, 58, 61, 0.9);
+    color: #fff; }
     .grid figcaption h3 {
       margin: 0;
       padding: 0;
@@ -111,8 +110,8 @@ body {
       padding: 5px 10px;
       border-radius: 2px;
       display: inline-block;
-      background: #ed4e6e;
-      color: #fff; }
+      background: #fff;
+      color: rgba(55, 58, 61, 0.9); }
 
 .cs-style-3 figure {
   overflow: hidden; }
@@ -249,7 +248,7 @@ body {
 #google-map {
   height: 300px;
   width: 100%; }
-  
+
 /*Dividers*/
 .section-heading-divider {
   height: 1px;
@@ -307,5 +306,45 @@ body {
 
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(210, 210, 210, 0.3); } }
+/* Cappuccino Navbar Style*/
+.navbar-cappuccino {
+  border-bottom: 1px solid rgba(190, 155, 123, 0.3);
+  background-color: #be9b7b; }
+  .navbar-cappuccino .navbar-brand .navbar-toggle {
+    color: #be9b7b; }
+  .navbar-cappuccino .nav li.active {
+    background-color: rgba(190, 155, 123, 0.3); }
+  .navbar-cappuccino .nav li a:hover, .navbar-cappuccino .nav li a:active {
+    color: #cdb79e; }
+  .navbar-cappuccino .nav li a:focus {
+    color: #000; }
+
+@media (min-width: 767px) {
+  .nav-cuppiccino .navbar {
+    background: rgba(190, 155, 123, 0.9); }
+  .nav-cuppiccino .top-nav-collapse {
+    background-color: #be9b7b; }
+  .nav-cuppiccino .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(190, 155, 123, 0.3); } }
+/* Green Navbar Style */
+.navbar-green {
+  border-bottom: 1px solid rgba(78, 192, 126, 0.3);
+  background-color: #4ec07e; }
+  .navbar-green .navbar-brand .navbar-toggle {
+    color: #4ec07e; }
+  .navbar-green .nav li.active {
+    background-color: rgba(78, 192, 126, 0.3); }
+  .navbar-green .nav li a:hover, .navbar-green .nav li a:active {
+    color: #71cc97; }
+  .navbar-green .nav li a:focus {
+    color: #000; }
+
+@media (min-width: 767px) {
+  .nav-green .navbar {
+    background: rgba(78, 192, 126, 0.9); }
+  .nav-green .top-nav-collapse {
+    background-color: #4ec07e; }
+  .nav-green .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(78, 192, 126, 0.3); } }
 
 /*# sourceMappingURL=main.css.map */
