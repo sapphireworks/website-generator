@@ -9,37 +9,17 @@
 
 <div class = "customization-cont">
 	<div class="container">
-			<div class="col-md-1"></div>
-					 <div class="col-md-5">
-					            <br><br><br><br><br><br>
-								<div class="list-group" id = "section-list">
-								  <a href="#" class="list-group-item">Section 1</a>
-								  <a href="#" class="list-group-item">Section 2</a>
-								  <a href="#" class="list-group-item active">Section 3</a>
-								  <a href="#" class="list-group-item">Section 4</a>
-								</div>
-								<!-- end of list-group -->
-						</div>
-						<!-- end of col-md-4 -->
-			         <div class="col-md-6">
-			               <p> Theme<p>
-	                           <div class="list-group list-group-horizontal">
-					              <a href="#" class="list-group-item">Light</a>
-					              <a href="#" class="list-group-item">Dark</a>
-					              <a href="#" class="list-group-item active">Semi-Dark</a>
-					              <a href="#" class="list-group-item">etc</a>
-					            </div>
-					            <!-- end of list-group -->
-					       <p> Section style<p>
-	                           <div class="list-group list-group-horizontal">
-					              <a href="#" class="list-group-item">Style 1</a>
-					              <a href="#" class="list-group-item active">Style 2</a>
-					              <a href="#" class="list-group-item">Style 3</a>
-					            </div>
-					            <!-- end of list-group -->
-					</div>
-					<!-- end of col-md-5 -->
-			</div>
+					<div class="">
+					        <p> Theme<p>
+	                            <%= form_for :customize, html: {method: "get"} do |f| %>
+  								<%= f.collection_select :theme_id, @themes, :id, :name, {prompt: "Select a Theme"}, {class: "form-control"} %>
+  								<%= f.collection_select :nav_bar_id, @nav_bars, :id, :name, {prompt: "Select a Nav-Bar"}, {class: "form-control"} %>
+  								<%= f.collection_select :home_section_id, @home_sections, :id, :name, {prompt: "Select a Home Section"}, {class: "form-control"} %>
+  								<%= f.collection_select :catalogue_section_id, @catalogue_sections, :id, :id, {prompt: "Select a Catalogue Section"}, {class: "form-control"} %>
+  								<%= f.collection_select :about_section_id, @about_sections, :id, :name, {prompt: "Select an About Section"}, {class: "form-control"} %>
+  								<%= f.collection_select :contact_us_section_id, @contact_us_sections, :id, :name, {prompt: "Select a Contact-us Section"}, {class: "form-control"} %>
+  							<% end %>
+					</div>				
 		<!-- end of container -->
    </div>
    <!-- end of customization-cont -->
@@ -50,7 +30,10 @@
 	</div>
 	<!-- end of caption-custom-comp -->
 
-    <iframe src="http://localhost:3000/template/show?id=1" width="100%" height="600"></iframe>
+	<!-- FIXME -->
+    <div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src=<%= "http://localhost:3000/template/show?id=#{params[:id]}" %>></iframe>
+	</div>
 
 	<div class="container footer-cont">
 			<p>Powered by <a href="#">Trustious</a></p>
