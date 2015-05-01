@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150410193536) do
+ActiveRecord::Schema.define(version: 20150501145410) do
 
   create_table "about_sections", force: :cascade do |t|
     t.string   "name",         limit: 255
-    t.string   "html",         limit: 255
+    t.string   "path",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150410193536) do
   end
 
   create_table "catalogue_sections", force: :cascade do |t|
-    t.string   "html",         limit: 255
+    t.string   "path",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -31,15 +31,21 @@ ActiveRecord::Schema.define(version: 20150410193536) do
   end
 
   create_table "clients", force: :cascade do |t|
-    t.string   "username",     limit: 255
-    t.integer  "templates_id", limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "username",               limit: 255
+    t.integer  "templates_id",           limit: 4
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+    t.integer  "nav_bars_id",            limit: 4
+    t.integer  "home_sections_id",       limit: 4
+    t.integer  "about_sections_id",      limit: 4
+    t.integer  "catalogue_sections_id",  limit: 4
+    t.integer  "contact_us_sections_id", limit: 4
+    t.text     "data",                   limit: 65535
   end
 
   create_table "contact_us_sections", force: :cascade do |t|
     t.string   "name",         limit: 255
-    t.string   "html",         limit: 255
+    t.string   "path",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -48,7 +54,7 @@ ActiveRecord::Schema.define(version: 20150410193536) do
 
   create_table "footers", force: :cascade do |t|
     t.string   "name",         limit: 255
-    t.string   "html",         limit: 255
+    t.string   "path",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -57,7 +63,7 @@ ActiveRecord::Schema.define(version: 20150410193536) do
 
   create_table "home_sections", force: :cascade do |t|
     t.string   "name",         limit: 255
-    t.string   "html",         limit: 255
+    t.string   "path",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -66,7 +72,7 @@ ActiveRecord::Schema.define(version: 20150410193536) do
 
   create_table "nav_bars", force: :cascade do |t|
     t.string   "name",         limit: 255
-    t.string   "html",         limit: 255
+    t.string   "path",         limit: 255
     t.integer  "templates_id", limit: 4
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -84,6 +90,7 @@ ActiveRecord::Schema.define(version: 20150410193536) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.string   "name",           limit: 255
+    t.string   "catalogue_path", limit: 255
   end
 
   create_table "themes", force: :cascade do |t|

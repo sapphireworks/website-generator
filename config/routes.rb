@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   get 'template/index'
   get 'template/show'
   get 'template/customize'
-  get 'template/template-1/index'
+  get 'template/template-1/index', to: 'template#show', id: 1
+  get 'template/template-1/catalogue', to: 'template#catalogue', id: 1
+  get 'template/template-2/index', to: 'template#show', id: 2
+  get 'template/template-2/catalogue', to: 'template#catalogue', id: 2
+
 
   root 'template#index'
   # The priority is based upon order of creation: first created -> highest priority.

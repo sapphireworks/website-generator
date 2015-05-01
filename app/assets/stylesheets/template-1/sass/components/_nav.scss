@@ -1,10 +1,10 @@
 /* Navigation bar styles */
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid transparentize($navbar-color, 0.7);
+  border-bottom: 1px solid transparentize($navbar-grey-color, 0.7);
   text-transform: uppercase;
   font-family: $headline-font-family;
-  background-color: $navbar-color;
+  background-color: $navbar-grey-color;
   .navbar-brand {
     font-weight: 700;
     &:focus {
@@ -13,7 +13,7 @@
     .navbar-toggle {
       padding: 4px 6px;
       font-size: 16px;
-      color: $navbar-color;
+      color: $navbar-grey-color;
       &:focus,
       &:active {
         outline: none;
@@ -27,17 +27,21 @@
     li {
       &.active {
         outline: none;
-        background-color: transparentize($navbar-color, 0.7);
+        background-color: transparentize($navbar-grey-color, 0.7);
       }
       a {
         -webkit-transition: background 0.3s ease-in-out;
         -moz-transition: background 0.3s ease-in-out;
         transition: background 0.3s ease-in-out;
         &:hover,
-        &:focus,
-        &.active {
-          outline: none;
-          background-color: transparentize($navbar-color, 0.7);
+        &:active {
+         outline: none;
+          color: $text-grey-color;
+          background-color: transparent;
+        }
+        &:focus{
+          color: $dark-color;
+          background-color: transparent;
         }
       }
     }
@@ -48,16 +52,18 @@
     padding: 5px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparentize($navbar-color, 0.1);
+    background: transparentize($navbar-grey-color, 0.1);
     -webkit-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
   }
   .top-nav-collapse {
     padding: 0;
-    background-color: $navbar-color;
+    background-color: $navbar-grey-color;
   }
   .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid transparentize($navbar-color, 0.7);
+    border-bottom: 1px solid transparentize($navbar-grey-color, 0.7);
   }
+  
+ 
 }

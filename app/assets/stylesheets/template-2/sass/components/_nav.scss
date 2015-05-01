@@ -1,0 +1,58 @@
+/* Blue nav-bar */
+
+#nav-blue {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5%);
+    font-size: 1vmax;
+    background-color: transperant;
+    z-index: 1000;
+}
+#nav-blue li a:hover,
+#nav-blue li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #eee;
+  background-color: #4e90d2;
+}
+
+/* Light Red nav-bar*/
+
+#nav-lightRed {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5%);
+    font-size: 1vmax;
+	background-color: transperant;
+    z-index: 1000;
+}
+
+#nav-lightRed li a:hover,
+#nav-lightRed li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #eb6f62;
+  background-color: #E74C3C;
+}
+
+/* Pink nav-bar */
+
+#nav-pink {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5%);
+    font-size: 1vmax;
+	background-color: transperant;
+    z-index: 1000;
+}
+
+#nav-pink li a:hover,
+#nav-pink li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #8b636c;
+  background-color: #94516a;
+}
