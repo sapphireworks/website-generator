@@ -50,6 +50,9 @@ class TemplateController < ApplicationController
 		@footers = Footer.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
 	end
 
+	def update_themes
+
+	end
 
 	def catalogue
 		@template = Template.find(params[:id])
