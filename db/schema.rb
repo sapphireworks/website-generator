@@ -12,7 +12,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20150501145410) do
-
   create_table "about_sections", force: :cascade do |t|
     t.string   "name",         limit: 255
     t.string   "path",         limit: 255
