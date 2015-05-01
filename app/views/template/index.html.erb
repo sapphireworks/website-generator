@@ -1,3 +1,7 @@
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, class: "alert alert-warning" %>
+<% end %>
+
 <div class="header-main">
   <div class="header-overlay">
     <h1>Trustious website generator</h1>
