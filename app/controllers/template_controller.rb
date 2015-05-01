@@ -27,14 +27,15 @@ class TemplateController < ApplicationController
 
 		if client.nil?
 			flash[:error] = "you are not an authorized user , please try again"
-			redirect_to :index
+			redirect_to :action => 'index'
+
+		elsif client.data.nil?
+				json = open("#{base_url}#{client.username}/fspec-lightop.json")
+				client.data = json
+				client.save
+
 		end
 
-		if client.data.nil?
-			json = open("#{base_url}#{client.username}/fspec-lightop.json")
-			client.data = json
-			client.save
-		end
 
 	end
 
