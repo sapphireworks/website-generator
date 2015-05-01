@@ -1,7 +1,6 @@
 <% content_for :head do %>
   <%= stylesheet_link_tag 'template-2/css/main' , media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'template-2/app', 'data-turbolinks-track' => true  %>
-  <%= stylesheet_link_tag 'gallery/component', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'gallery/modernizr.custom', 'data-turbolinks-track' => true  %>
   <%= stylesheet_link_tag 'gallery/forGallery.css', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'gallery/final_gallery.js', 'data-turbolinks-track' => true %>
@@ -9,12 +8,16 @@
 <div class="container">
 
   <%= render @nav.path.to_s %>
-  <div class="jumbotron" style="padding-top: 100px;">
+  <!-- end of navbar -->
+  <div class="jumbotron">
     <h1>CATALOGUE</h1>
   </div>
-  <%= render "template/gallery/gridJS.html.erb" %>
+  <!-- end of jumbotron -->
+  <%= render "template/gallery/gallery.html.erb" %>
   <%= link_to "< Back", controller: "template", action: "show", id: 2 %>
 </div>
+<!-- end of container -->
 <footer class="footer-distributed">
   <%= render @footer.path.to_s %>
 </footer>
+<!-- end of footer -->
