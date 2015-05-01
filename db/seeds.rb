@@ -12,6 +12,7 @@ template = Template.new
 template.name = 'template-1'
 template.thumbnail_path = 'template-1/thumb.png'
 template.template_path = 'template/template-1/index.html.erb'
+template.catalogue_path = 'template/template-1/catalogue.html.erb'
 template.save
 
 theme = Theme.new
@@ -46,6 +47,13 @@ catalogue_section.templates_id = 1
 catalogue_section.themes_id = 1
 catalogue_section.save
 
+#new catalogue section
+catalogue_section = CatalogueSection.new
+catalogue_section.path = 'template/catalogue-sections/catalogue_section_3.html.erb'
+catalogue_section.templates_id = 1
+catalogue_section.themes_id = 3
+catalogue_section.save
+
 contact_us_section = ContactUsSection.new
 contact_us_section.name = 'normal-contact-with-map'
 contact_us_section.path = 'template/contact-us-sections/contact_us_section_1.html.erb'
@@ -66,6 +74,7 @@ template = Template.new
 template.name = 'template-2'
 template.thumbnail_path = 'template-2/thumb.png'
 template.template_path = 'template/template-2/index.html.erb'
+template.catalogue_path = 'template/template-1/catalogue.html.erb'
 template.save
 
 theme = Theme.new
@@ -113,3 +122,7 @@ footer.path = "template/footers/footer_2.html.erb"
 footer.templates_id = 2
 footer.themes_id = 2
 footer.save
+
+client = Client.new
+client.username = 'parador-flooring'
+client.save

@@ -132,9 +132,12 @@ a {
   height: 100vh;
   min-height: 500px; }
 
+.jumbotron {
+  padding-top: 100px; }
+
 /* Blue Footer */
 .footer-blue {
-  background-color: #4E90D2;
+  background-color: #4e90d2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -341,7 +344,7 @@ footer {
   left: 50%;
   transform: translateX(-50%) translateY(-5%);
   font-size: 1vmax;
-  background-color: #4E90D2;
+  background-color: transperant;
   z-index: 1000; }
 
 #nav-blue li a:hover,
@@ -358,7 +361,7 @@ footer {
   left: 50%;
   transform: translateX(-50%) translateY(-5%);
   font-size: 1vmax;
-  background-color: #E74C3C;
+  background-color: transperant;
   z-index: 1000; }
 
 #nav-lightRed li a:hover,
@@ -375,7 +378,7 @@ footer {
   left: 50%;
   transform: translateX(-50%) translateY(-5%);
   font-size: 1vmax;
-  background-color: #94516a;
+  background-color: transperant;
   z-index: 1000; }
 
 #nav-pink li a:hover,
