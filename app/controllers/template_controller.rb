@@ -37,6 +37,15 @@ class TemplateController < ApplicationController
 
 		end
 
+		@template = Template.find(params[:id])
+		#@theme = Themes.find()  FIXME
+		@nav = NavBar.where("templates_id = ?",@template.id).first
+		@home_section = HomeSection.where("templates_id = ?",@template.id).first
+		@about_section = AboutSection.where("templates_id = ?",@template.id).first
+		@catalogue_section = CatalogueSection.where("templates_id = ?",@template.id).first
+		@contact_us_section = ContactUsSection.where("templates_id = ?",@template.id).first
+		@footer = Footer.where("templates_id = ?",@template.id).first
+
 	end
 
 
