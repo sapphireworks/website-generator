@@ -311,7 +311,7 @@ body {
   border-bottom: 1px solid rgba(190, 155, 123, 0.3);
   background-color: #be9b7b; }
   .navbar-cappuccino .navbar-brand .navbar-toggle {
-    color: footer-cappuccino-color; }
+    color: #be9b7b; }
   .navbar-cappuccino .nav li.active {
     background-color: rgba(190, 155, 123, 0.3); }
   .navbar-cappuccino .nav li a:hover, .navbar-cappuccino .nav li a:active {
@@ -331,7 +331,7 @@ body {
   border-bottom: 1px solid rgba(78, 192, 126, 0.3);
   background-color: #4ec07e; }
   .navbar-green .navbar-brand .navbar-toggle {
-    color: footer-green-color; }
+    color: #4ec07e; }
   .navbar-green .nav li.active {
     background-color: rgba(78, 192, 126, 0.3); }
   .navbar-green .nav li a:hover, .navbar-green .nav li a:active {
