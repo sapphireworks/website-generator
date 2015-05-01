@@ -38,14 +38,16 @@ class TemplateController < ApplicationController
 		end
 
 		@template = Template.find(params[:id])
-		#@theme = Themes.find()  FIXME
-		@nav = NavBar.where("templates_id = ?",@template.id).first
-		@home_section = HomeSection.where("templates_id = ?",@template.id).first
-		@about_section = AboutSection.where("templates_id = ?",@template.id).first
-		@catalogue_section = CatalogueSection.where("templates_id = ?",@template.id).first
-		@contact_us_section = ContactUsSection.where("templates_id = ?",@template.id).first
-		@footer = Footer.where("templates_id = ?",@template.id).first
+	
+		@themes = Theme.where("templates_id = ?",@template.id)
+		@theme = Theme.find(params[:theme_id])
 
+		@nav_bars = NavBar.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@home_sections = HomeSection.where("templates_id = ? AND themes_id = ?",@template.id.id,@theme.id)
+		@about_sections = AboutSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@catalogue_sections = CatalogueSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@contact_us_sections = ContactUsSection.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
+		@footers = Footer.where("templates_id = ? AND themes_id = ?",@template.id,@theme.id)
 	end
 
 
