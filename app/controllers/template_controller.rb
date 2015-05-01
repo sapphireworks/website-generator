@@ -1,7 +1,7 @@
 class TemplateController < ApplicationController
 	require 'open-uri'
 
-	base_url = "http://www.homna.com/items/"
+	BASE_URL = "http://www.homna.com/items/"
 
 	def index
 		@templates = Template.all
@@ -23,14 +23,15 @@ class TemplateController < ApplicationController
 	end
 
 	def customize
-		client = Client.find_by(id: 3) #FIXME Hardcoded ! , We don't know how to authorize that client !
+		client = Client.find_by(id: 1) #FIXME Hardcoded ! , We don't know how to authorize that client !
 
 		if client.nil?
 			flash[:error] = "you are not an authorized user , please try again"
 			redirect_to :action => 'index'
 
 		elsif client.data.nil?
-				json = open("#{base_url}#{client.username}/fspec-lightop.json")
+				url = "#{BASE_URL}#{client.username}/fspec-lightop.json"
+				json = open(url)
 				client.data = json
 				client.save
 
