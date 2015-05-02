@@ -46,14 +46,6 @@ body {
   padding-top: 80px;
   min-height: 500px;
   width: 100%; }
- .title h3 {
-      font-size: 80;
-      margin: 0;
-      padding: 0;
-      
-      text-align: center;
-
-        }
 
 .section {
   padding: 50px 0; }
@@ -92,7 +84,6 @@ body {
     text-align: left;
     position: relative; }
   .grid figure {
-    max-width: 100%;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
@@ -146,7 +137,7 @@ body {
       bottom: 20px;
       right: 20px; }
 
-.cs-style-3 figure  .cs-style-3 figure:hover img,
+.cs-style-3 figure .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
@@ -176,6 +167,7 @@ body {
   height: 46px;
   z-index: 1;
   display: table;
+  text-align: center;
   background-color: #d2d2d2; }
 
 .footer-grey .footer-content {
@@ -189,7 +181,6 @@ body {
 .footer-grey .powered-by-trustious {
   color: #000;
   font-size: 18px;
-  text-align: center;
   padding-right: 20px; }
 
 .footer-grey .buttons .fa {
@@ -299,15 +290,6 @@ body {
       color: #000;
       background-color: transparent; }
 
-  @media (max-width: 767){
-   .grid figure {
-    width: 100%;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    height: auto;
-    position: relative; }
- }
 @media (min-width: 767px) {
   .navbar {
     padding: 5px 0;
