@@ -38,7 +38,7 @@ class TemplateController < ApplicationController
 		end
 
 		@template = Template.find(params[:id])
-	
+
 		@themes = Theme.where("templates_id = ?",@template.id)
 		@theme = Theme.find(params[:theme_id])
 
@@ -51,7 +51,7 @@ class TemplateController < ApplicationController
 	end
 
 	def update_themes
-		
+
 		@template = Template.find(params[:id])
 		@theme = Theme.find(params[:theme_id])
 
@@ -74,6 +74,7 @@ class TemplateController < ApplicationController
 
 		render @template.catalogue_path.to_s
 	end
+
 	def publish
 		client = Client.find_by(id: 1)
 		@template = Template.find(client.templates_id)

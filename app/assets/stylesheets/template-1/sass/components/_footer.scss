@@ -1,5 +1,5 @@
- /* Grey Footer styles */
- .footer-grey {
+/* Grey Footer styles */
+.footer-grey {
   position: relative;
   width: 100%;
   bottom: 0;
@@ -7,6 +7,7 @@
   height: 46px;
   z-index: 1;
   display: table;
+  text-align: center;
   background-color: $grey-color;
 }
 .footer-grey .footer-content {
@@ -20,16 +21,14 @@
 .footer-grey .powered-by-trustious {
   color: $dark-color;
   font-size: 18px;
-  text-align: center;
   padding-right: 20px;
 }
-.footer-grey .buttons .fa{
-  color: $dark-color;
+.footer-grey .buttons .fa {
+  color: $link-color;
   height: 12px;
-  }
-
-   /* Green Footer styles */
- .footer-green {
+}
+/* Green Footer styles */
+.footer-green {
   position: relative;
   width: 100%;
   bottom: 0;
@@ -53,14 +52,12 @@
   text-align: center;
   padding-right: 20px;
 }
-.footer-green .buttons .fa{
-  color: $dark-color;
+.footer-green .buttons .fa {
+  color: $link-color;
   height: 12px;
-  }
-
-
-   /* Cappuccino Footer styles */
- .footer-cappuccino {
+}
+/* Cappuccino Footer styles */
+.footer-cappuccino {
   position: relative;
   width: 100%;
   bottom: 0;
@@ -84,8 +81,7 @@
   text-align: center;
   padding-right: 20px;
 }
-.footer-cappuccino .buttons .fa{
-  color: $dark-color;
+.footer-cappuccino .buttons .fa {
+  color: $link-color;
   height: 12px;
-  }
-  
+}
