@@ -137,14 +137,14 @@ body {
       bottom: 20px;
       right: 20px; }
 
-.cs-style-3 figure .no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
   transform: translateY(-50px); }
 
-.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -167,6 +167,7 @@ body {
   height: 46px;
   z-index: 1;
   display: table;
+  text-align: center;
   background-color: #d2d2d2; }
 
 .footer-grey .footer-content {
@@ -180,11 +181,10 @@ body {
 .footer-grey .powered-by-trustious {
   color: #000;
   font-size: 18px;
-  text-align: center;
   padding-right: 20px; }
 
 .footer-grey .buttons .fa {
-  color: #000;
+  color: #0066CC;
   height: 12px; }
 
 /* Green Footer styles */
@@ -213,7 +213,7 @@ body {
   padding-right: 20px; }
 
 .footer-green .buttons .fa {
-  color: #000;
+  color: #0066CC;
   height: 12px; }
 
 /* Cappuccino Footer styles */
@@ -242,7 +242,7 @@ body {
   padding-right: 20px; }
 
 .footer-cappuccino .buttons .fa {
-  color: #000;
+  color: #0066CC;
   height: 12px; }
 
 #google-map {

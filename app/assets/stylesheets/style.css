@@ -233,7 +233,7 @@ input[type="radio"] {
 }
 
 .header-customization {
-  background: url(<%= asset_path '51a60938a9f7464309.jpg' %>) no-repeat;
+  background: url("image-header-background.jpg") no-repeat;
   max-height: 320px;
 }
 
