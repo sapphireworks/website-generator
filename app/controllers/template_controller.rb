@@ -38,7 +38,7 @@ class TemplateController < ApplicationController
 		end
 
 		@template = Template.find(params[:id])
-	
+
 		@themes = Theme.where("templates_id = ?",@template.id)
 		@theme = Theme.find(params[:theme_id])
 
@@ -51,7 +51,7 @@ class TemplateController < ApplicationController
 	end
 
 	def update_themes
-		
+
 		@template = Template.find(params[:id])
 		@theme = Theme.find(params[:theme_id])
 
@@ -73,5 +73,17 @@ class TemplateController < ApplicationController
 		@footer = Footer.where("templates_id = ?", @template.id).first;
 
 		render @template.catalogue_path.to_s
+	end
+
+	def publish
+		client = Client.find_by(id: 1)
+		@template = Template.find(client.templates_id)
+		@nav = NavBar.where("templates_id = ? AND id = ?",@template.id,client.nav_bars_id).first;
+		@home_section = HomeSection.where("templates_id = ? AND id = ?",@template.id,client.home_sections_id).first;
+		@about_section = AboutSection.where("templates_id = ? AND id = ?",@template.id,client.about_sections_id).first
+		@catalogue_section = CatalogueSection.where("templates_id = ? AND id = ?",@template.id,client.catalogue_sections_id).first
+		@contact_us_section = ContactUsSection.where("templates_id = ? AND id = ?",@template.id,client.contact_us_sections_id).first
+		@footer = Footer.where("templates_id = ?",@template.id).first
+		render @template.template_path.to_s
 	end
 end
